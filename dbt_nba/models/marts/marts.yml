@@ -1,0 +1,69 @@
+version: 2
+
+models:
+  - name: dim_players
+    description: One row per player with season-level shooting aggregates
+    columns:
+      - name: player_id
+        tests: [unique, not_null]
+      - name: fg_pct
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+              max_value: 1
+
+  - name: dim_teams
+    description: One row per team with season-level shooting aggregates
+    columns:
+      - name: team_id
+        tests: [unique, not_null]
+
+  - name: dim_games
+    description: One row per game with aggregated shot stats
+    columns:
+      - name: game_id
+        tests: [unique, not_null]
+      - name: game_date
+        tests: [not_null]
+
+  - name: fact_shots
+    description: >
+      Grain: one row per field goal attempt. Includes shot location,
+      zone classification, timing, score differential, fatigue context,
+      and a computed shot_quality_score.
+    columns:
+      - name: shot_id
+        tests: [unique, not_null]
+      - name: shot_quality_score
+        description: >
+          Weighted score (0-1 scale) combining zone base value,
+          distance penalty, fatigue adjustment, and clutch bonus.
+        tests:
+          - not_null
+          - dbt_utils.accepted_range:
+              min_value: -0.5
+              max_value: 1.0
+      - name: shot_made
+        tests:
+          - accepted_values:
+              values: [0, 1]
+      - name: is_back_to_back
+        tests: [not_null]
+      - name: player_id
+        description: FK to dim_players
+        tests:
+          - relationships:
+              to: ref('dim_players')
+              field: player_id
+      - name: team_id
+        description: FK to dim_teams
+        tests:
+          - relationships:
+              to: ref('dim_teams')
+              field: team_id
+      - name: game_id
+        description: FK to dim_games
+        tests:
+          - relationships:
+              to: ref('dim_games')
+              field: game_id

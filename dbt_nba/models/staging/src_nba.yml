@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: nba_raw
+    description: Raw NBA shot and game log data loaded from nba_api into BigQuery
+    schema: "{{ env_var('BQ_RAW_DATASET', 'nba_raw') }}"
+    tables:
+      - name: shots_with_rest
+        description: >
+          Merged shot chart detail with rest days from nba_shots_with_rest_2024_25.csv.
+          One row per field goal attempt with player, game, location, and rest context.
+        columns:
+          - name: GAME_ID
+            tests: [not_null]
+          - name: PLAYER_ID
+            tests: [not_null]
+          - name: SHOT_ATTEMPTED_FLAG
+            tests: [not_null]

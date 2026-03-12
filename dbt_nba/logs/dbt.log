@@ -1,0 +1,1914 @@
+[0m11:41:34.862208 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f4d250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108589490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1085892b0>]}
+
+
+============================== 11:41:34.864512 | b53c9a42-b386-42c9-8808-ab5d5085502e ==============================
+[0m11:41:34.864512 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m11:41:34.864800 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'empty': 'None', 'log_path': '/Users/krishpatel/Downloads/krish-portfolio/dbt_nba/logs', 'target_path': 'None', 'use_colors': 'True', 'introspect': 'True', 'debug': 'False', 'profiles_dir': '/Users/krishpatel/Downloads/krish-portfolio/dbt_nba', 'printer_width': '80', 'version_check': 'True', 'static_parser': 'True', 'warn_error': 'None', 'invocation_command': 'dbt deps', 'fail_fast': 'False', 'write_json': 'True', 'log_format': 'default'}
+[0m11:41:34.980144 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b53c9a42-b386-42c9-8808-ab5d5085502e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1078fbd60>]}
+[0m11:41:34.989263 [debug] [MainThread]: Set downloads directory='/var/folders/zl/l5vpkwqx19zd3gvnblxdf3600000gn/T/dbt-downloads-60ykclaq'
+[0m11:41:34.989541 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m11:41:35.125520 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m11:41:35.126991 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m11:41:35.159287 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m11:41:35.173673 [info ] [MainThread]: Updating lock file in file path: /Users/krishpatel/Downloads/krish-portfolio/dbt_nba/package-lock.yml
+[0m11:41:35.175268 [debug] [MainThread]: Set downloads directory='/var/folders/zl/l5vpkwqx19zd3gvnblxdf3600000gn/T/dbt-downloads-2aui3emu'
+[0m11:41:35.178522 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m11:41:35.488799 [info ] [MainThread]: Installed from version 1.3.3
+[0m11:41:35.489065 [info ] [MainThread]: Up to date!
+[0m11:41:35.489283 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'b53c9a42-b386-42c9-8808-ab5d5085502e', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1086881c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108791df0>]}
+[0m11:41:35.495034 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.67351776, "process_in_blocks": "0", "process_kernel_time": 0.157452, "process_mem_max_rss": "108380160", "process_out_blocks": "0", "process_user_time": 0.836045}
+[0m11:41:35.495283 [debug] [MainThread]: Command `dbt deps` succeeded at 11:41:35.495229 after 0.67 seconds
+[0m11:41:35.495518 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f4d250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10723c400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1078fbd60>]}
+[0m11:41:35.495798 [debug] [MainThread]: Flushing usage events
+[0m11:41:35.682892 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:41:36.467059 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1058a2f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ede460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ede280>]}
+
+
+============================== 11:41:36.468875 | 2c9e11b3-f5da-49ca-8fa6-b39784babb06 ==============================
+[0m11:41:36.468875 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m11:41:36.469158 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'static_parser': 'True', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'profiles_dir': '/Users/krishpatel/Downloads/krish-portfolio/dbt_nba', 'target_path': 'None', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run', 'partial_parse': 'True', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'version_check': 'True', 'log_path': '/Users/krishpatel/Downloads/krish-portfolio/dbt_nba/logs', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'fail_fast': 'False', 'debug': 'False', 'write_json': 'True'}
+[0m11:41:40.385045 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2c9e11b3-f5da-49ca-8fa6-b39784babb06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1047d5dc0>]}
+[0m11:41:40.416979 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2c9e11b3-f5da-49ca-8fa6-b39784babb06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a5f9fa0>]}
+[0m11:41:40.417481 [info ] [MainThread]: Registered adapter: bigquery=1.10.2
+[0m11:41:40.602857 [debug] [MainThread]: checksum: e63134dccc1251cfb572caf0e4aa952f030c125ee3634f3bf2c0a2e1bb6ae349, vars: {}, profile: , target: , version: 1.11.0b3
+[0m11:41:40.603381 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m11:41:40.603610 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '2c9e11b3-f5da-49ca-8fa6-b39784babb06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a782bb0>]}
+[0m11:41:41.658525 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `accepted_values` defined on 'stg_shots' in
+package 'nba_shot_analytics' (models/staging/stg_shots.yml). Arguments to
+generic tests should be nested under the `arguments` property.
+[0m11:41:41.659147 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '2c9e11b3-f5da-49ca-8fa6-b39784babb06', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11b36a190>]}
+[0m11:41:41.785960 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2c9e11b3-f5da-49ca-8fa6-b39784babb06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x129963130>]}
+[0m11:41:41.853634 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/krishpatel/Downloads/krish-portfolio/dbt_nba/target/manifest.json
+[0m11:41:41.855033 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/krishpatel/Downloads/krish-portfolio/dbt_nba/target/semantic_manifest.json
+[0m11:41:41.865923 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2c9e11b3-f5da-49ca-8fa6-b39784babb06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x129967bb0>]}
+[0m11:41:41.866243 [info ] [MainThread]: Found 6 models, 25 data tests, 1 source, 625 macros
+[0m11:41:41.866433 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2c9e11b3-f5da-49ca-8fa6-b39784babb06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1053e14f0>]}
+[0m11:41:41.867370 [info ] [MainThread]: 
+[0m11:41:41.867565 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m11:41:41.867713 [info ] [MainThread]: 
+[0m11:41:41.867973 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m11:41:41.870684 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_nbaanalyzer'
+[0m11:41:41.871043 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_nbaanalyzer'
+[0m11:41:41.871256 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:41:41.871427 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:41:42.987794 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_nbaanalyzer, now create_nbaanalyzer_nba_analytics_dev_staging)
+[0m11:41:42.989060 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_nbaanalyzer, now create_nbaanalyzer_nba_analytics_dev_analytics)
+[0m11:41:42.989759 [debug] [ThreadPool]: Creating schema "database: "nbaanalyzer"
+schema: "nba_analytics_dev_staging"
+"
+[0m11:41:42.990146 [debug] [ThreadPool]: Creating schema "database: "nbaanalyzer"
+schema: "nba_analytics_dev_analytics"
+"
+[0m11:41:43.001177 [debug] [ThreadPool]: On create_nbaanalyzer_nba_analytics_dev_staging: /* {"app": "dbt", "dbt_version": "1.11.0b3", "profile_name": "nba_shot_analytics", "target_name": "dev", "connection_name": "create_nbaanalyzer_nba_analytics_dev_staging"} */
+create schema if not exists `nbaanalyzer`.`nba_analytics_dev_staging`
+  
+[0m11:41:43.003149 [debug] [ThreadPool]: On create_nbaanalyzer_nba_analytics_dev_analytics: /* {"app": "dbt", "dbt_version": "1.11.0b3", "profile_name": "nba_shot_analytics", "target_name": "dev", "connection_name": "create_nbaanalyzer_nba_analytics_dev_analytics"} */
+create schema if not exists `nbaanalyzer`.`nba_analytics_dev_analytics`
+  
+[0m11:41:43.003487 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:41:43.003668 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:41:43.378755 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=nbaanalyzer&j=bq:US:27b142df-8d5c-4ee4-88dc-8595e12c05e7&page=queryresults
+[0m11:41:43.389232 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=nbaanalyzer&j=bq:US:11a479ec-44aa-41f8-937c-e5b1b0ed7b08&page=queryresults
+[0m11:41:44.061812 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_nbaanalyzer_nba_analytics_dev_staging, now list_nbaanalyzer_nba_analytics_dev_staging)
+[0m11:41:44.062307 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:41:44.062746 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_nbaanalyzer_nba_analytics_dev_analytics, now list_nbaanalyzer_nba_analytics_dev_analytics)
+[0m11:41:44.063372 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:41:44.452449 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2c9e11b3-f5da-49ca-8fa6-b39784babb06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a55cac0>]}
+[0m11:41:44.454785 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:41:44.463560 [debug] [Thread-1  ]: Began running node model.nba_shot_analytics.stg_shots
+[0m11:41:44.464847 [info ] [Thread-1  ]: 1 of 5 START sql view model nba_analytics_dev_staging.stg_shots ................ [RUN]
+[0m11:41:44.465810 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_nbaanalyzer_nba_analytics_dev_staging, now model.nba_shot_analytics.stg_shots)
+[0m11:41:44.466419 [debug] [Thread-1  ]: Began compiling node model.nba_shot_analytics.stg_shots
+[0m11:41:44.480086 [debug] [Thread-1  ]: Writing injected SQL for node "model.nba_shot_analytics.stg_shots"
+[0m11:41:44.481471 [debug] [Thread-1  ]: Began executing node model.nba_shot_analytics.stg_shots
+[0m11:41:44.502388 [debug] [Thread-1  ]: Writing runtime sql for node "model.nba_shot_analytics.stg_shots"
+[0m11:41:44.503279 [debug] [Thread-1  ]: On model.nba_shot_analytics.stg_shots: /* {"app": "dbt", "dbt_version": "1.11.0b3", "profile_name": "nba_shot_analytics", "target_name": "dev", "node_id": "model.nba_shot_analytics.stg_shots"} */
+
+
+  create or replace view `nbaanalyzer`.`nba_analytics_dev_staging`.`stg_shots`
+  OPTIONS()
+  as with source as (
+
+    select * from `nbaanalyzer`.`nba_raw`.`shots_with_rest`
+
+),
+
+renamed as (
+
+    select
+        -- identifiers
+        to_hex(md5(cast(coalesce(cast(GAME_ID as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(GAME_EVENT_ID as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(PLAYER_ID as string), '_dbt_utils_surrogate_key_null_') as string)))
+            as shot_id,
+        cast(GAME_ID as string)     as game_id,
+        cast(PLAYER_ID as int64)    as player_id,
+        PLAYER_NAME                 as player_name,
+        cast(TEAM_ID as int64)      as team_id,
+        TEAM_NAME                   as team_name,
+
+        -- game context
+        GAME_DATE                   as game_date,
+        HTM                         as home_team_abbr,
+        VTM                         as away_team_abbr,
+
+        -- shot location
+        cast(LOC_X as float64)      as loc_x,
+        cast(LOC_Y as float64)      as loc_y,
+        cast(SHOT_DISTANCE as int64) as shot_distance,
+
+        -- shot classification
+        SHOT_TYPE                   as shot_type,
+        SHOT_ZONE_BASIC             as shot_zone_basic,
+        SHOT_ZONE_AREA              as shot_zone_area,
+        SHOT_ZONE_RANGE             as shot_zone_range,
+        ACTION_TYPE                 as action_type,
+        EVENT_TYPE                  as event_type,
+
+        -- timing
+        cast(PERIOD as int64)       as period,
+        cast(MINUTES_REMAINING as int64)  as minutes_remaining,
+        cast(SECONDS_REMAINING as int64)  as seconds_remaining,
+
+        -- outcome
+        cast(SHOT_MADE_FLAG as int64)      as shot_made,
+        cast(SHOT_ATTEMPTED_FLAG as int64) as shot_attempted,
+
+        -- rest / fatigue
+        cast(REST_DAYS as float64)  as rest_days
+
+    from source
+
+)
+
+select * from renamed;
+
+
+[0m11:41:44.503644 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m11:41:45.094418 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=nbaanalyzer&j=bq:US:77217b4d-bb11-4502-9939-25dd8b7f4a8d&page=queryresults
+[0m11:41:45.549436 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2c9e11b3-f5da-49ca-8fa6-b39784babb06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x129ba12e0>]}
+[0m11:41:45.550671 [info ] [Thread-1  ]: 1 of 5 OK created sql view model nba_analytics_dev_staging.stg_shots ........... [[32mCREATE VIEW (0 processed)[0m in 1.08s]
+[0m11:41:45.551136 [debug] [Thread-1  ]: Finished running node model.nba_shot_analytics.stg_shots
+[0m11:41:45.551754 [debug] [Thread-3  ]: Began running node model.nba_shot_analytics.dim_games
+[0m11:41:45.552056 [debug] [Thread-4  ]: Began running node model.nba_shot_analytics.dim_players
+[0m11:41:45.552452 [info ] [Thread-3  ]: 2 of 5 START sql table model nba_analytics_dev_analytics.dim_games ............. [RUN]
+[0m11:41:45.552775 [debug] [Thread-2  ]: Began running node model.nba_shot_analytics.dim_teams
+[0m11:41:45.553059 [debug] [Thread-1  ]: Began running node model.nba_shot_analytics.int_shots_enriched
+[0m11:41:45.553370 [info ] [Thread-4  ]: 3 of 5 START sql table model nba_analytics_dev_analytics.dim_players ........... [RUN]
+[0m11:41:45.553779 [debug] [Thread-3  ]: Acquiring new bigquery connection 'model.nba_shot_analytics.dim_games'
+[0m11:41:45.554134 [info ] [Thread-2  ]: 4 of 5 START sql table model nba_analytics_dev_analytics.dim_teams ............. [RUN]
+[0m11:41:45.554451 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.nba_shot_analytics.stg_shots, now model.nba_shot_analytics.int_shots_enriched)
+[0m11:41:45.554794 [debug] [Thread-4  ]: Acquiring new bigquery connection 'model.nba_shot_analytics.dim_players'
+[0m11:41:45.555067 [debug] [Thread-3  ]: Began compiling node model.nba_shot_analytics.dim_games
+[0m11:41:45.555336 [debug] [Thread-2  ]: Re-using an available connection from the pool (formerly list_nbaanalyzer_nba_analytics_dev_analytics, now model.nba_shot_analytics.dim_teams)
+[0m11:41:45.555605 [debug] [Thread-1  ]: Began compiling node model.nba_shot_analytics.int_shots_enriched
+[0m11:41:45.555849 [debug] [Thread-4  ]: Began compiling node model.nba_shot_analytics.dim_players
+[0m11:41:45.558433 [debug] [Thread-3  ]: Writing injected SQL for node "model.nba_shot_analytics.dim_games"
+[0m11:41:45.558709 [debug] [Thread-2  ]: Began compiling node model.nba_shot_analytics.dim_teams
+[0m11:41:45.560999 [debug] [Thread-1  ]: Writing injected SQL for node "model.nba_shot_analytics.int_shots_enriched"
+[0m11:41:45.564056 [debug] [Thread-4  ]: Writing injected SQL for node "model.nba_shot_analytics.dim_players"
+[0m11:41:45.566451 [debug] [Thread-2  ]: Writing injected SQL for node "model.nba_shot_analytics.dim_teams"
+[0m11:41:45.567001 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m11:41:45.567527 [debug] [Thread-1  ]: Finished running node model.nba_shot_analytics.int_shots_enriched
+[0m11:41:45.567752 [debug] [Thread-2  ]: Began executing node model.nba_shot_analytics.dim_teams
+[0m11:41:45.567974 [debug] [Thread-4  ]: Began executing node model.nba_shot_analytics.dim_players
+[0m11:41:45.568198 [debug] [Thread-3  ]: Began executing node model.nba_shot_analytics.dim_games
+[0m11:41:45.592221 [debug] [Thread-4  ]: Writing runtime sql for node "model.nba_shot_analytics.dim_players"
+[0m11:41:45.593219 [debug] [Thread-2  ]: Writing runtime sql for node "model.nba_shot_analytics.dim_teams"
+[0m11:41:45.593431 [debug] [Thread-1  ]: Began running node model.nba_shot_analytics.fact_shots
+[0m11:41:45.595147 [debug] [Thread-3  ]: Writing runtime sql for node "model.nba_shot_analytics.dim_games"
+[0m11:41:45.595540 [info ] [Thread-1  ]: 5 of 5 START sql table model nba_analytics_dev_analytics.fact_shots ............ [RUN]
+[0m11:41:45.595894 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.nba_shot_analytics.int_shots_enriched, now model.nba_shot_analytics.fact_shots)
+[0m11:41:45.596146 [debug] [Thread-1  ]: Began compiling node model.nba_shot_analytics.fact_shots
+[0m11:41:45.602269 [debug] [Thread-4  ]: On model.nba_shot_analytics.dim_players: /* {"app": "dbt", "dbt_version": "1.11.0b3", "profile_name": "nba_shot_analytics", "target_name": "dev", "node_id": "model.nba_shot_analytics.dim_players"} */
+
+  
+    
+
+    create or replace table `nbaanalyzer`.`nba_analytics_dev_analytics`.`dim_players`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      with player_source as (
+
+    select distinct
+        player_id,
+        player_name,
+        team_id,
+        team_name
+    from `nbaanalyzer`.`nba_analytics_dev_staging`.`stg_shots`
+
+),
+
+player_stats as (
+
+    select
+        player_id,
+        count(*)                                    as total_fga,
+        sum(shot_made)                              as total_fgm,
+        round(safe_divide(sum(shot_made), count(*)), 3) as fg_pct,
+        count(distinct game_id)                     as games_played,
+        round(avg(shot_distance), 1)                as avg_shot_distance
+    from `nbaanalyzer`.`nba_analytics_dev_staging`.`stg_shots`
+    group by player_id
+
+)
+
+select
+    p.player_id,
+    p.player_name,
+    p.team_id,
+    p.team_name,
+    s.total_fga,
+    s.total_fgm,
+    s.fg_pct,
+    s.games_played,
+    s.avg_shot_distance
+from player_source p
+inner join player_stats s using (player_id)
+    );
+  
+[0m11:41:45.602556 [debug] [Thread-3  ]: On model.nba_shot_analytics.dim_games: /* {"app": "dbt", "dbt_version": "1.11.0b3", "profile_name": "nba_shot_analytics", "target_name": "dev", "node_id": "model.nba_shot_analytics.dim_games"} */
+
+  
+    
+
+    create or replace table `nbaanalyzer`.`nba_analytics_dev_analytics`.`dim_games`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      with game_shots as (
+
+    select
+        game_id,
+        game_date,
+        home_team_abbr,
+        away_team_abbr,
+        count(*)                                    as total_fga,
+        sum(shot_made)                              as total_fgm,
+        round(safe_divide(sum(shot_made), count(*)), 3) as game_fg_pct,
+        count(distinct player_id)                   as players_count,
+        max(period)                                 as final_period,
+        round(avg(shot_distance), 1)                as avg_shot_distance
+    from `nbaanalyzer`.`nba_analytics_dev_staging`.`stg_shots`
+    group by game_id, game_date, home_team_abbr, away_team_abbr
+
+)
+
+select
+    game_id,
+    cast(game_date as date)  as game_date,
+    home_team_abbr,
+    away_team_abbr,
+    case when final_period > 4 then true else false end as went_to_overtime,
+    final_period,
+    total_fga,
+    total_fgm,
+    game_fg_pct,
+    players_count,
+    avg_shot_distance
+from game_shots
+    );
+  
+[0m11:41:45.608538 [debug] [Thread-4  ]: Opening a new connection, currently in state init
+[0m11:41:45.614728 [debug] [Thread-1  ]: Writing injected SQL for node "model.nba_shot_analytics.fact_shots"
+[0m11:41:45.615009 [debug] [Thread-2  ]: On model.nba_shot_analytics.dim_teams: /* {"app": "dbt", "dbt_version": "1.11.0b3", "profile_name": "nba_shot_analytics", "target_name": "dev", "node_id": "model.nba_shot_analytics.dim_teams"} */
+
+  
+    
+
+    create or replace table `nbaanalyzer`.`nba_analytics_dev_analytics`.`dim_teams`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      with team_source as (
+
+    select distinct
+        team_id,
+        team_name
+    from `nbaanalyzer`.`nba_analytics_dev_staging`.`stg_shots`
+    where team_id is not null
+
+),
+
+team_stats as (
+
+    select
+        team_id,
+        count(*)                                    as team_fga,
+        sum(shot_made)                              as team_fgm,
+        round(safe_divide(sum(shot_made), count(*)), 3) as team_fg_pct,
+        count(distinct player_id)                   as roster_size,
+        count(distinct game_id)                     as games_played,
+        round(avg(shot_distance), 1)                as avg_shot_distance
+    from `nbaanalyzer`.`nba_analytics_dev_staging`.`stg_shots`
+    group by team_id
+
+)
+
+select
+    t.team_id,
+    t.team_name,
+    s.team_fga,
+    s.team_fgm,
+    s.team_fg_pct,
+    s.roster_size,
+    s.games_played,
+    s.avg_shot_distance
+from team_source t
+inner join team_stats s using (team_id)
+    );
+  
+[0m11:41:45.615304 [debug] [Thread-3  ]: Opening a new connection, currently in state init
+[0m11:41:45.616044 [debug] [Thread-2  ]: Opening a new connection, currently in state closed
+[0m11:41:45.617063 [debug] [Thread-1  ]: Began executing node model.nba_shot_analytics.fact_shots
+[0m11:41:45.619404 [debug] [Thread-1  ]: Writing runtime sql for node "model.nba_shot_analytics.fact_shots"
+[0m11:41:45.620339 [debug] [Thread-1  ]: On model.nba_shot_analytics.fact_shots: /* {"app": "dbt", "dbt_version": "1.11.0b3", "profile_name": "nba_shot_analytics", "target_name": "dev", "node_id": "model.nba_shot_analytics.fact_shots"} */
+
+  
+    
+
+    create or replace table `nbaanalyzer`.`nba_analytics_dev_analytics`.`fact_shots`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      /*
+    fact_shots — one row per field goal attempt
+    Includes shot context, fatigue metrics, and computed shot_quality_score.
+
+    Score differential is estimated per-game using cumulative made shots
+    as a proxy (true score diff requires play-by-play data).
+*/
+
+with  __dbt__cte__int_shots_enriched as (
+/*
+    Enriches staged shots with:
+    - total seconds remaining in regulation
+    - is_back_to_back flag
+    - shot zone category for quality scoring
+    - score differential (estimated from period + time context)
+*/
+
+with shots as (
+
+    select * from `nbaanalyzer`.`nba_analytics_dev_staging`.`stg_shots`
+
+),
+
+game_context as (
+
+    -- derive per-player back-to-back from rest_days
+    select
+        *,
+
+        -- total seconds left in regulation (periods 1-4 are 12 min each)
+        case
+            when period <= 4
+                then (4 - period) * 720 + minutes_remaining * 60 + seconds_remaining
+            else minutes_remaining * 60 + seconds_remaining  -- OT: just remaining time
+        end as total_seconds_remaining,
+
+        -- back-to-back: played yesterday (rest_days = 1)
+        case when rest_days = 1 then true else false end as is_back_to_back,
+
+        -- normalize zone names to scoring categories
+        case
+            when shot_zone_basic in ('Restricted Area', 'In The Paint (Non-RA)')
+                then 'paint'
+            when shot_zone_basic = 'Mid-Range'
+                then 'midrange'
+            when shot_zone_basic in ('Left Corner 3', 'Right Corner 3')
+                then 'corner_3'
+            when shot_zone_basic = 'Above the Break 3'
+                then 'above_break_3'
+            when shot_zone_basic = 'Backcourt'
+                then 'backcourt'
+            else 'other'
+        end as shot_zone_category
+
+    from shots
+
+)
+
+select * from game_context
+), enriched as (
+
+    select * from __dbt__cte__int_shots_enriched
+
+),
+
+-- Estimate score differential using cumulative points within each game
+-- This is an approximation; true differential needs play-by-play data
+game_scoring as (
+
+    select
+        *,
+
+        -- cumulative points scored by player's team in this game up to this shot
+        sum(case when shot_made = 1 then
+            case when shot_type = '3PT Field Goal' then 3 else 2 end
+            else 0 end)
+            over (
+                partition by game_id, team_id
+                order by period, minutes_remaining desc, seconds_remaining desc
+                rows between unbounded preceding and 1 preceding
+            ) as team_pts_before,
+
+        -- cumulative points by opposing team
+        sum(case when shot_made = 1 then
+            case when shot_type = '3PT Field Goal' then 3 else 2 end
+            else 0 end)
+            over (
+                partition by game_id
+                order by period, minutes_remaining desc, seconds_remaining desc
+                rows between unbounded preceding and 1 preceding
+            ) as game_pts_before
+
+    from enriched
+
+),
+
+with_differential as (
+
+    select
+        *,
+        -- score_differential = my team's points - opponent's points (approx)
+        coalesce(team_pts_before, 0)
+            - coalesce(game_pts_before - team_pts_before, 0)
+            as score_differential
+    from game_scoring
+
+)
+
+select
+    -- keys
+    shot_id,
+    game_id,
+    player_id,
+    team_id,
+
+    -- shot details
+    shot_type,
+    action_type,
+    event_type,
+    shot_made,
+    loc_x,
+    loc_y,
+
+    -- zone & distance
+    shot_distance,
+    shot_zone_basic,
+    shot_zone_area,
+    shot_zone_range,
+    shot_zone_category,
+
+    -- timing
+    period,
+    minutes_remaining,
+    seconds_remaining,
+    total_seconds_remaining,
+
+    -- game state
+    score_differential,
+
+    -- fatigue
+    rest_days,
+    is_back_to_back,
+
+    -- shot quality score
+    
+
+    round(cast(
+        -- zone base value
+        case shot_zone_category
+            when 'paint'         then 0.65
+            when 'corner_3'      then 0.58
+            when 'above_break_3' then 0.52
+            when 'midrange'      then 0.40
+            when 'backcourt'     then 0.05
+            else 0.35
+        end
+
+        -- distance adjustment: -0.005 per foot beyond zone midpoint
+        - greatest(0.0, (shot_distance - case shot_zone_category
+            when 'paint'         then 5
+            when 'midrange'      then 15
+            when 'corner_3'      then 23
+            when 'above_break_3' then 25
+            else 20
+        end) * 0.005)
+
+        -- fatigue adjustment
+        - case
+            when is_back_to_back then 0.03
+            when coalesce(rest_days, 2) = 0 then 0.04
+            else 0.0
+        end
+
+        -- clutch bonus: final 2 min of 4Q/OT, game within 5 pts
+        + case
+            when period >= 4
+                 and total_seconds_remaining <= 120
+                 and abs(coalesce(score_differential, 0)) <= 5
+            then 0.05
+            else 0.0
+        end
+
+    as float64), 4)
+
+ as shot_quality_score
+
+from with_differential
+    );
+  
+[0m11:41:45.620693 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m11:41:46.532316 [debug] [Thread-2  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=nbaanalyzer&j=bq:US:c7b4a9be-0034-44af-987a-3190ace30805&page=queryresults
+[0m11:41:46.533510 [debug] [Thread-3  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=nbaanalyzer&j=bq:US:d75ebe38-8e2c-40e7-a356-efc219814e08&page=queryresults
+[0m11:41:46.534718 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=nbaanalyzer&j=bq:US:b94a1916-5472-48c7-8e55-43a086aede5a&page=queryresults
+[0m11:41:46.535503 [debug] [Thread-4  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=nbaanalyzer&j=bq:US:c30bf1d4-92fc-4c53-b290-d7f616d59c22&page=queryresults
+[0m11:41:47.140488 [error] [Thread-3  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=nbaanalyzer&j=bq:US:d75ebe38-8e2c-40e7-a356-efc219814e08&page=queryresults
+[0m11:41:47.212615 [debug] [Thread-3  ]: Database Error in model dim_games (models/marts/dim_games.sql)
+  Invalid date: '20241205'
+  compiled code at target/run/nba_shot_analytics/models/marts/dim_games.sql
+[0m11:41:47.213107 [debug] [Thread-3  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2c9e11b3-f5da-49ca-8fa6-b39784babb06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x129ba10a0>]}
+[0m11:41:47.213518 [error] [Thread-3  ]: 2 of 5 ERROR creating sql table model nba_analytics_dev_analytics.dim_games .... [[31mERROR[0m in 1.66s]
+[0m11:41:47.213821 [debug] [Thread-3  ]: Finished running node model.nba_shot_analytics.dim_games
+[0m11:41:47.214098 [debug] [Thread-7  ]: Marking all children of 'model.nba_shot_analytics.dim_games' to be skipped because of status 'error'.  Reason: Database Error in model dim_games (models/marts/dim_games.sql)
+  Invalid date: '20241205'
+  compiled code at target/run/nba_shot_analytics/models/marts/dim_games.sql.
+[0m11:41:48.858903 [debug] [Thread-4  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2c9e11b3-f5da-49ca-8fa6-b39784babb06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12a299850>]}
+[0m11:41:48.863408 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2c9e11b3-f5da-49ca-8fa6-b39784babb06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12a237d90>]}
+[0m11:41:48.864820 [info ] [Thread-4  ]: 3 of 5 OK created sql table model nba_analytics_dev_analytics.dim_players ...... [[32mCREATE TABLE (355.0 rows, 8.5 MiB processed)[0m in 3.30s]
+[0m11:41:48.866248 [debug] [Thread-4  ]: Finished running node model.nba_shot_analytics.dim_players
+[0m11:41:48.865660 [info ] [Thread-2  ]: 4 of 5 OK created sql table model nba_analytics_dev_analytics.dim_teams ........ [[32mCREATE TABLE (30.0 rows, 6.8 MiB processed)[0m in 3.31s]
+[0m11:41:48.867219 [debug] [Thread-2  ]: Finished running node model.nba_shot_analytics.dim_teams
+[0m11:41:50.140882 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2c9e11b3-f5da-49ca-8fa6-b39784babb06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1053e7610>]}
+[0m11:41:50.142067 [info ] [Thread-1  ]: 5 of 5 OK created sql table model nba_analytics_dev_analytics.fact_shots ....... [[32mCREATE TABLE (115.6k rows, 20.7 MiB processed)[0m in 4.54s]
+[0m11:41:50.142785 [debug] [Thread-1  ]: Finished running node model.nba_shot_analytics.fact_shots
+[0m11:41:50.144263 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m11:41:50.144955 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:41:50.145285 [debug] [MainThread]: Connection 'model.nba_shot_analytics.fact_shots' was properly closed.
+[0m11:41:50.145559 [debug] [MainThread]: Connection 'model.nba_shot_analytics.dim_teams' was properly closed.
+[0m11:41:50.145834 [debug] [MainThread]: Connection 'model.nba_shot_analytics.dim_games' was properly closed.
+[0m11:41:50.146099 [debug] [MainThread]: Connection 'model.nba_shot_analytics.dim_players' was properly closed.
+[0m11:41:50.146499 [info ] [MainThread]: 
+[0m11:41:50.146847 [info ] [MainThread]: Finished running 4 table models, 1 view model in 0 hours 0 minutes and 8.28 seconds (8.28s).
+[0m11:41:50.148349 [debug] [MainThread]: Command end result
+[0m11:41:50.185205 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/krishpatel/Downloads/krish-portfolio/dbt_nba/target/manifest.json
+[0m11:41:50.186709 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/krishpatel/Downloads/krish-portfolio/dbt_nba/target/semantic_manifest.json
+[0m11:41:50.191167 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/krishpatel/Downloads/krish-portfolio/dbt_nba/target/run_results.json
+[0m11:41:50.191365 [info ] [MainThread]: 
+[0m11:41:50.191592 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m11:41:50.191784 [info ] [MainThread]: 
+[0m11:41:50.192023 [error] [MainThread]: [31mFailure in model dim_games (models/marts/dim_games.sql)[0m
+[0m11:41:50.192246 [error] [MainThread]:   Database Error in model dim_games (models/marts/dim_games.sql)
+  Invalid date: '20241205'
+  compiled code at target/run/nba_shot_analytics/models/marts/dim_games.sql
+[0m11:41:50.192414 [info ] [MainThread]: 
+[0m11:41:50.192614 [info ] [MainThread]:   compiled code at target/compiled/nba_shot_analytics/models/marts/dim_games.sql
+[0m11:41:50.192790 [info ] [MainThread]: 
+[0m11:41:50.192992 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=5
+[0m11:41:50.193469 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 7 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m11:41:50.195270 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 13.761931, "process_in_blocks": "0", "process_kernel_time": 0.554536, "process_mem_max_rss": "334938112", "process_out_blocks": "0", "process_user_time": 3.437568}
+[0m11:41:50.195529 [debug] [MainThread]: Command `dbt run` failed at 11:41:50.195476 after 13.76 seconds
+[0m11:41:50.195776 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1058a2f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x129967b20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b77bb0>]}
+[0m11:41:50.195996 [debug] [MainThread]: Flushing usage events
+[0m11:41:50.323339 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:46:04.559149 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119f82eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11b9f6be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11b9f6a00>]}
+
+
+============================== 11:46:04.561499 | 8c314b25-65fc-4737-b9cd-948a1a8a0b03 ==============================
+[0m11:46:04.561499 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m11:46:04.561785 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'target_path': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_format': 'default', 'log_path': '/Users/krishpatel/Downloads/krish-portfolio/dbt_nba/logs', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'empty': 'False', 'introspect': 'True', 'use_colors': 'True', 'fail_fast': 'False', 'log_cache_events': 'False', 'printer_width': '80', 'use_experimental_parser': 'False', 'warn_error': 'None', 'write_json': 'True', 'invocation_command': 'dbt run', 'profiles_dir': '/Users/krishpatel/Downloads/krish-portfolio/dbt_nba', 'no_print': 'None', 'debug': 'False', 'static_parser': 'True', 'version_check': 'True', 'cache_selected_only': 'False'}
+[0m11:46:04.564608 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'GCP_PROJECT_ID'
+[0m11:46:04.565746 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.048784457, "process_in_blocks": "0", "process_kernel_time": 0.108669, "process_mem_max_rss": "88670208", "process_out_blocks": "0", "process_user_time": 0.685871}
+[0m11:46:04.565987 [debug] [MainThread]: Command `dbt run` failed at 11:46:04.565937 after 0.05 seconds
+[0m11:46:04.566208 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119f82eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11ba48c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11ba48e80>]}
+[0m11:46:04.566403 [debug] [MainThread]: Flushing usage events
+[0m11:46:04.741065 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:46:17.733536 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10731aee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10894bcd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10894baf0>]}
+
+
+============================== 11:46:17.736465 | 52fc47d1-4913-4336-a5d2-76808bd54eec ==============================
+[0m11:46:17.736465 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m11:46:17.736802 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'introspect': 'True', 'invocation_command': 'dbt run', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'fail_fast': 'False', 'version_check': 'True', 'target_path': 'None', 'quiet': 'False', 'partial_parse': 'True', 'printer_width': '80', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_colors': 'True', 'use_experimental_parser': 'False', 'static_parser': 'True', 'empty': 'False', 'log_format': 'default', 'debug': 'False', 'warn_error': 'None', 'log_path': '/Users/krishpatel/Downloads/krish-portfolio/dbt_nba/logs', 'profiles_dir': '/Users/krishpatel/Downloads/krish-portfolio/dbt_nba', 'log_cache_events': 'False'}
+[0m11:46:19.231233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '52fc47d1-4913-4336-a5d2-76808bd54eec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x145b42880>]}
+[0m11:46:19.264819 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '52fc47d1-4913-4336-a5d2-76808bd54eec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x145ae98b0>]}
+[0m11:46:19.265612 [info ] [MainThread]: Registered adapter: bigquery=1.10.2
+[0m11:46:19.420305 [debug] [MainThread]: checksum: e63134dccc1251cfb572caf0e4aa952f030c125ee3634f3bf2c0a2e1bb6ae349, vars: {}, profile: , target: , version: 1.11.0b3
+[0m11:46:19.527992 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m11:46:19.528226 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m11:46:19.557774 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '52fc47d1-4913-4336-a5d2-76808bd54eec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1463d3e80>]}
+[0m11:46:19.619365 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/krishpatel/Downloads/krish-portfolio/dbt_nba/target/manifest.json
+[0m11:46:19.621078 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/krishpatel/Downloads/krish-portfolio/dbt_nba/target/semantic_manifest.json
+[0m11:46:19.631130 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '52fc47d1-4913-4336-a5d2-76808bd54eec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x14638ce80>]}
+[0m11:46:19.631370 [info ] [MainThread]: Found 6 models, 25 data tests, 1 source, 625 macros
+[0m11:46:19.631544 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '52fc47d1-4913-4336-a5d2-76808bd54eec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1463993d0>]}
+[0m11:46:19.632453 [info ] [MainThread]: 
+[0m11:46:19.632640 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m11:46:19.632782 [info ] [MainThread]: 
+[0m11:46:19.633039 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m11:46:19.635426 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_nbaanalyzer'
+[0m11:46:19.635721 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_nbaanalyzer'
+[0m11:46:19.635889 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:46:19.636065 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:46:20.584092 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_nbaanalyzer, now list_nbaanalyzer_nba_analytics_dev_staging)
+[0m11:46:20.585170 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_nbaanalyzer, now list_nbaanalyzer_nba_analytics_dev_analytics)
+[0m11:46:20.585667 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:46:20.586006 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:46:20.881315 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '52fc47d1-4913-4336-a5d2-76808bd54eec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107cc6f10>]}
+[0m11:46:20.882754 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:46:20.888429 [debug] [Thread-1  ]: Began running node model.nba_shot_analytics.stg_shots
+[0m11:46:20.889831 [info ] [Thread-1  ]: 1 of 5 START sql view model nba_analytics_dev_staging.stg_shots ................ [RUN]
+[0m11:46:20.890784 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_nbaanalyzer_nba_analytics_dev_staging, now model.nba_shot_analytics.stg_shots)
+[0m11:46:20.891410 [debug] [Thread-1  ]: Began compiling node model.nba_shot_analytics.stg_shots
+[0m11:46:20.915898 [debug] [Thread-1  ]: Writing injected SQL for node "model.nba_shot_analytics.stg_shots"
+[0m11:46:20.916573 [debug] [Thread-1  ]: Began executing node model.nba_shot_analytics.stg_shots
+[0m11:46:20.936393 [debug] [Thread-1  ]: Writing runtime sql for node "model.nba_shot_analytics.stg_shots"
+[0m11:46:20.936877 [debug] [Thread-1  ]: On model.nba_shot_analytics.stg_shots: /* {"app": "dbt", "dbt_version": "1.11.0b3", "profile_name": "nba_shot_analytics", "target_name": "dev", "node_id": "model.nba_shot_analytics.stg_shots"} */
+
+
+  create or replace view `nbaanalyzer`.`nba_analytics_dev_staging`.`stg_shots`
+  OPTIONS()
+  as with source as (
+
+    select * from `nbaanalyzer`.`nba_raw`.`shots_with_rest`
+
+),
+
+renamed as (
+
+    select
+        -- identifiers
+        to_hex(md5(cast(coalesce(cast(GAME_ID as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(GAME_EVENT_ID as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(PLAYER_ID as string), '_dbt_utils_surrogate_key_null_') as string)))
+            as shot_id,
+        cast(GAME_ID as string)     as game_id,
+        cast(PLAYER_ID as int64)    as player_id,
+        PLAYER_NAME                 as player_name,
+        cast(TEAM_ID as int64)      as team_id,
+        TEAM_NAME                   as team_name,
+
+        -- game context
+        GAME_DATE                   as game_date,
+        HTM                         as home_team_abbr,
+        VTM                         as away_team_abbr,
+
+        -- shot location
+        cast(LOC_X as float64)      as loc_x,
+        cast(LOC_Y as float64)      as loc_y,
+        cast(SHOT_DISTANCE as int64) as shot_distance,
+
+        -- shot classification
+        SHOT_TYPE                   as shot_type,
+        SHOT_ZONE_BASIC             as shot_zone_basic,
+        SHOT_ZONE_AREA              as shot_zone_area,
+        SHOT_ZONE_RANGE             as shot_zone_range,
+        ACTION_TYPE                 as action_type,
+        EVENT_TYPE                  as event_type,
+
+        -- timing
+        cast(PERIOD as int64)       as period,
+        cast(MINUTES_REMAINING as int64)  as minutes_remaining,
+        cast(SECONDS_REMAINING as int64)  as seconds_remaining,
+
+        -- outcome
+        cast(SHOT_MADE_FLAG as int64)      as shot_made,
+        cast(SHOT_ATTEMPTED_FLAG as int64) as shot_attempted,
+
+        -- rest / fatigue
+        cast(REST_DAYS as float64)  as rest_days
+
+    from source
+
+)
+
+select * from renamed;
+
+
+[0m11:46:20.937194 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m11:46:21.470986 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=nbaanalyzer&j=bq:US:ff15932a-e181-4ea9-967a-83e0e46acd8d&page=queryresults
+[0m11:46:21.775717 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '52fc47d1-4913-4336-a5d2-76808bd54eec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x146425310>]}
+[0m11:46:21.776364 [info ] [Thread-1  ]: 1 of 5 OK created sql view model nba_analytics_dev_staging.stg_shots ........... [[32mCREATE VIEW (0 processed)[0m in 0.88s]
+[0m11:46:21.776750 [debug] [Thread-1  ]: Finished running node model.nba_shot_analytics.stg_shots
+[0m11:46:21.777225 [debug] [Thread-3  ]: Began running node model.nba_shot_analytics.dim_games
+[0m11:46:21.777460 [debug] [Thread-4  ]: Began running node model.nba_shot_analytics.dim_players
+[0m11:46:21.777765 [info ] [Thread-3  ]: 2 of 5 START sql table model nba_analytics_dev_analytics.dim_games ............. [RUN]
+[0m11:46:21.778027 [debug] [Thread-2  ]: Began running node model.nba_shot_analytics.dim_teams
+[0m11:46:21.778257 [debug] [Thread-1  ]: Began running node model.nba_shot_analytics.int_shots_enriched
+[0m11:46:21.778504 [info ] [Thread-4  ]: 3 of 5 START sql table model nba_analytics_dev_analytics.dim_players ........... [RUN]
+[0m11:46:21.778804 [debug] [Thread-3  ]: Acquiring new bigquery connection 'model.nba_shot_analytics.dim_games'
+[0m11:46:21.779104 [info ] [Thread-2  ]: 4 of 5 START sql table model nba_analytics_dev_analytics.dim_teams ............. [RUN]
+[0m11:46:21.779379 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.nba_shot_analytics.stg_shots, now model.nba_shot_analytics.int_shots_enriched)
+[0m11:46:21.779666 [debug] [Thread-4  ]: Acquiring new bigquery connection 'model.nba_shot_analytics.dim_players'
+[0m11:46:21.779887 [debug] [Thread-3  ]: Began compiling node model.nba_shot_analytics.dim_games
+[0m11:46:21.780109 [debug] [Thread-2  ]: Re-using an available connection from the pool (formerly list_nbaanalyzer_nba_analytics_dev_analytics, now model.nba_shot_analytics.dim_teams)
+[0m11:46:21.780327 [debug] [Thread-1  ]: Began compiling node model.nba_shot_analytics.int_shots_enriched
+[0m11:46:21.780538 [debug] [Thread-4  ]: Began compiling node model.nba_shot_analytics.dim_players
+[0m11:46:21.782856 [debug] [Thread-3  ]: Writing injected SQL for node "model.nba_shot_analytics.dim_games"
+[0m11:46:21.783076 [debug] [Thread-2  ]: Began compiling node model.nba_shot_analytics.dim_teams
+[0m11:46:21.785021 [debug] [Thread-1  ]: Writing injected SQL for node "model.nba_shot_analytics.int_shots_enriched"
+[0m11:46:21.787247 [debug] [Thread-4  ]: Writing injected SQL for node "model.nba_shot_analytics.dim_players"
+[0m11:46:21.789373 [debug] [Thread-2  ]: Writing injected SQL for node "model.nba_shot_analytics.dim_teams"
+[0m11:46:21.789866 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m11:46:21.790089 [debug] [Thread-4  ]: Began executing node model.nba_shot_analytics.dim_players
+[0m11:46:21.790287 [debug] [Thread-3  ]: Began executing node model.nba_shot_analytics.dim_games
+[0m11:46:21.790755 [debug] [Thread-1  ]: Finished running node model.nba_shot_analytics.int_shots_enriched
+[0m11:46:21.790937 [debug] [Thread-2  ]: Began executing node model.nba_shot_analytics.dim_teams
+[0m11:46:21.797375 [debug] [Thread-4  ]: Opening a new connection, currently in state init
+[0m11:46:21.810168 [debug] [Thread-3  ]: Writing runtime sql for node "model.nba_shot_analytics.dim_games"
+[0m11:46:21.811608 [debug] [Thread-2  ]: Opening a new connection, currently in state closed
+[0m11:46:21.811848 [debug] [Thread-1  ]: Began running node model.nba_shot_analytics.fact_shots
+[0m11:46:21.812879 [info ] [Thread-1  ]: 5 of 5 START sql table model nba_analytics_dev_analytics.fact_shots ............ [RUN]
+[0m11:46:21.813137 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.nba_shot_analytics.int_shots_enriched, now model.nba_shot_analytics.fact_shots)
+[0m11:46:21.813332 [debug] [Thread-1  ]: Began compiling node model.nba_shot_analytics.fact_shots
+[0m11:46:21.825750 [debug] [Thread-3  ]: On model.nba_shot_analytics.dim_games: /* {"app": "dbt", "dbt_version": "1.11.0b3", "profile_name": "nba_shot_analytics", "target_name": "dev", "node_id": "model.nba_shot_analytics.dim_games"} */
+
+  
+    
+
+    create or replace table `nbaanalyzer`.`nba_analytics_dev_analytics`.`dim_games`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      with game_shots as (
+
+    select
+        game_id,
+        game_date,
+        home_team_abbr,
+        away_team_abbr,
+        count(*)                                    as total_fga,
+        sum(shot_made)                              as total_fgm,
+        round(safe_divide(sum(shot_made), count(*)), 3) as game_fg_pct,
+        count(distinct player_id)                   as players_count,
+        max(period)                                 as final_period,
+        round(avg(shot_distance), 1)                as avg_shot_distance
+    from `nbaanalyzer`.`nba_analytics_dev_staging`.`stg_shots`
+    group by game_id, game_date, home_team_abbr, away_team_abbr
+
+)
+
+select
+    game_id,
+    cast(game_date as date)  as game_date,
+    home_team_abbr,
+    away_team_abbr,
+    case when final_period > 4 then true else false end as went_to_overtime,
+    final_period,
+    total_fga,
+    total_fgm,
+    game_fg_pct,
+    players_count,
+    avg_shot_distance
+from game_shots
+    );
+  
+[0m11:46:21.830699 [debug] [Thread-1  ]: Writing injected SQL for node "model.nba_shot_analytics.fact_shots"
+[0m11:46:21.831247 [debug] [Thread-3  ]: Opening a new connection, currently in state init
+[0m11:46:21.832166 [debug] [Thread-1  ]: Began executing node model.nba_shot_analytics.fact_shots
+[0m11:46:21.833970 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m11:46:22.082605 [debug] [Thread-2  ]: Writing runtime sql for node "model.nba_shot_analytics.dim_teams"
+[0m11:46:22.084978 [debug] [Thread-2  ]: On model.nba_shot_analytics.dim_teams: /* {"app": "dbt", "dbt_version": "1.11.0b3", "profile_name": "nba_shot_analytics", "target_name": "dev", "node_id": "model.nba_shot_analytics.dim_teams"} */
+
+  
+    
+
+    create or replace table `nbaanalyzer`.`nba_analytics_dev_analytics`.`dim_teams`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      with team_source as (
+
+    select distinct
+        team_id,
+        team_name
+    from `nbaanalyzer`.`nba_analytics_dev_staging`.`stg_shots`
+    where team_id is not null
+
+),
+
+team_stats as (
+
+    select
+        team_id,
+        count(*)                                    as team_fga,
+        sum(shot_made)                              as team_fgm,
+        round(safe_divide(sum(shot_made), count(*)), 3) as team_fg_pct,
+        count(distinct player_id)                   as roster_size,
+        count(distinct game_id)                     as games_played,
+        round(avg(shot_distance), 1)                as avg_shot_distance
+    from `nbaanalyzer`.`nba_analytics_dev_staging`.`stg_shots`
+    group by team_id
+
+)
+
+select
+    t.team_id,
+    t.team_name,
+    s.team_fga,
+    s.team_fgm,
+    s.team_fg_pct,
+    s.roster_size,
+    s.games_played,
+    s.avg_shot_distance
+from team_source t
+inner join team_stats s using (team_id)
+    );
+  
+[0m11:46:22.111895 [debug] [Thread-1  ]: Writing runtime sql for node "model.nba_shot_analytics.fact_shots"
+[0m11:46:22.112859 [debug] [Thread-1  ]: On model.nba_shot_analytics.fact_shots: /* {"app": "dbt", "dbt_version": "1.11.0b3", "profile_name": "nba_shot_analytics", "target_name": "dev", "node_id": "model.nba_shot_analytics.fact_shots"} */
+
+  
+    
+
+    create or replace table `nbaanalyzer`.`nba_analytics_dev_analytics`.`fact_shots`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      /*
+    fact_shots — one row per field goal attempt
+    Includes shot context, fatigue metrics, and computed shot_quality_score.
+
+    Score differential is estimated per-game using cumulative made shots
+    as a proxy (true score diff requires play-by-play data).
+*/
+
+with  __dbt__cte__int_shots_enriched as (
+/*
+    Enriches staged shots with:
+    - total seconds remaining in regulation
+    - is_back_to_back flag
+    - shot zone category for quality scoring
+    - score differential (estimated from period + time context)
+*/
+
+with shots as (
+
+    select * from `nbaanalyzer`.`nba_analytics_dev_staging`.`stg_shots`
+
+),
+
+game_context as (
+
+    -- derive per-player back-to-back from rest_days
+    select
+        *,
+
+        -- total seconds left in regulation (periods 1-4 are 12 min each)
+        case
+            when period <= 4
+                then (4 - period) * 720 + minutes_remaining * 60 + seconds_remaining
+            else minutes_remaining * 60 + seconds_remaining  -- OT: just remaining time
+        end as total_seconds_remaining,
+
+        -- back-to-back: played yesterday (rest_days = 1)
+        case when rest_days = 1 then true else false end as is_back_to_back,
+
+        -- normalize zone names to scoring categories
+        case
+            when shot_zone_basic in ('Restricted Area', 'In The Paint (Non-RA)')
+                then 'paint'
+            when shot_zone_basic = 'Mid-Range'
+                then 'midrange'
+            when shot_zone_basic in ('Left Corner 3', 'Right Corner 3')
+                then 'corner_3'
+            when shot_zone_basic = 'Above the Break 3'
+                then 'above_break_3'
+            when shot_zone_basic = 'Backcourt'
+                then 'backcourt'
+            else 'other'
+        end as shot_zone_category
+
+    from shots
+
+)
+
+select * from game_context
+), enriched as (
+
+    select * from __dbt__cte__int_shots_enriched
+
+),
+
+-- Estimate score differential using cumulative points within each game
+-- This is an approximation; true differential needs play-by-play data
+game_scoring as (
+
+    select
+        *,
+
+        -- cumulative points scored by player's team in this game up to this shot
+        sum(case when shot_made = 1 then
+            case when shot_type = '3PT Field Goal' then 3 else 2 end
+            else 0 end)
+            over (
+                partition by game_id, team_id
+                order by period, minutes_remaining desc, seconds_remaining desc
+                rows between unbounded preceding and 1 preceding
+            ) as team_pts_before,
+
+        -- cumulative points by opposing team
+        sum(case when shot_made = 1 then
+            case when shot_type = '3PT Field Goal' then 3 else 2 end
+            else 0 end)
+            over (
+                partition by game_id
+                order by period, minutes_remaining desc, seconds_remaining desc
+                rows between unbounded preceding and 1 preceding
+            ) as game_pts_before
+
+    from enriched
+
+),
+
+with_differential as (
+
+    select
+        *,
+        -- score_differential = my team's points - opponent's points (approx)
+        coalesce(team_pts_before, 0)
+            - coalesce(game_pts_before - team_pts_before, 0)
+            as score_differential
+    from game_scoring
+
+)
+
+select
+    -- keys
+    shot_id,
+    game_id,
+    player_id,
+    team_id,
+
+    -- shot details
+    shot_type,
+    action_type,
+    event_type,
+    shot_made,
+    loc_x,
+    loc_y,
+
+    -- zone & distance
+    shot_distance,
+    shot_zone_basic,
+    shot_zone_area,
+    shot_zone_range,
+    shot_zone_category,
+
+    -- timing
+    period,
+    minutes_remaining,
+    seconds_remaining,
+    total_seconds_remaining,
+
+    -- game state
+    score_differential,
+
+    -- fatigue
+    rest_days,
+    is_back_to_back,
+
+    -- shot quality score
+    
+
+    round(cast(
+        -- zone base value
+        case shot_zone_category
+            when 'paint'         then 0.65
+            when 'corner_3'      then 0.58
+            when 'above_break_3' then 0.52
+            when 'midrange'      then 0.40
+            when 'backcourt'     then 0.05
+            else 0.35
+        end
+
+        -- distance adjustment: -0.005 per foot beyond zone midpoint
+        - greatest(0.0, (shot_distance - case shot_zone_category
+            when 'paint'         then 5
+            when 'midrange'      then 15
+            when 'corner_3'      then 23
+            when 'above_break_3' then 25
+            else 20
+        end) * 0.005)
+
+        -- fatigue adjustment
+        - case
+            when is_back_to_back then 0.03
+            when coalesce(rest_days, 2) = 0 then 0.04
+            else 0.0
+        end
+
+        -- clutch bonus: final 2 min of 4Q/OT, game within 5 pts
+        + case
+            when period >= 4
+                 and total_seconds_remaining <= 120
+                 and abs(coalesce(score_differential, 0)) <= 5
+            then 0.05
+            else 0.0
+        end
+
+    as float64), 4)
+
+ as shot_quality_score
+
+from with_differential
+    );
+  
+[0m11:46:22.192557 [debug] [Thread-4  ]: Writing runtime sql for node "model.nba_shot_analytics.dim_players"
+[0m11:46:22.193965 [debug] [Thread-4  ]: On model.nba_shot_analytics.dim_players: /* {"app": "dbt", "dbt_version": "1.11.0b3", "profile_name": "nba_shot_analytics", "target_name": "dev", "node_id": "model.nba_shot_analytics.dim_players"} */
+
+  
+    
+
+    create or replace table `nbaanalyzer`.`nba_analytics_dev_analytics`.`dim_players`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      with player_source as (
+
+    select distinct
+        player_id,
+        player_name,
+        team_id,
+        team_name
+    from `nbaanalyzer`.`nba_analytics_dev_staging`.`stg_shots`
+
+),
+
+player_stats as (
+
+    select
+        player_id,
+        count(*)                                    as total_fga,
+        sum(shot_made)                              as total_fgm,
+        round(safe_divide(sum(shot_made), count(*)), 3) as fg_pct,
+        count(distinct game_id)                     as games_played,
+        round(avg(shot_distance), 1)                as avg_shot_distance
+    from `nbaanalyzer`.`nba_analytics_dev_staging`.`stg_shots`
+    group by player_id
+
+)
+
+select
+    p.player_id,
+    p.player_name,
+    p.team_id,
+    p.team_name,
+    s.total_fga,
+    s.total_fgm,
+    s.fg_pct,
+    s.games_played,
+    s.avg_shot_distance
+from player_source p
+inner join player_stats s using (player_id)
+    );
+  
+[0m11:46:22.491972 [debug] [Thread-3  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=nbaanalyzer&j=bq:US:d93221fd-fc5a-4b02-b608-d6eda3346d6f&page=queryresults
+[0m11:46:22.632678 [debug] [Thread-2  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=nbaanalyzer&j=bq:US:f9d573f8-36eb-4ba5-ad91-5f959e06f7ea&page=queryresults
+[0m11:46:22.643040 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=nbaanalyzer&j=bq:US:6e8b70ca-7c39-402f-a32b-155eb8912467&page=queryresults
+[0m11:46:22.689451 [debug] [Thread-4  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=nbaanalyzer&j=bq:US:01faf50e-7af4-48db-ba5a-d59eb86e1230&page=queryresults
+[0m11:46:22.849276 [error] [Thread-3  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=nbaanalyzer&j=bq:US:d93221fd-fc5a-4b02-b608-d6eda3346d6f&page=queryresults
+[0m11:46:22.905023 [debug] [Thread-3  ]: Database Error in model dim_games (models/marts/dim_games.sql)
+  Invalid date: '20241205'
+  compiled code at target/run/nba_shot_analytics/models/marts/dim_games.sql
+[0m11:46:22.905514 [debug] [Thread-3  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '52fc47d1-4913-4336-a5d2-76808bd54eec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x146b7f310>]}
+[0m11:46:22.905952 [error] [Thread-3  ]: 2 of 5 ERROR creating sql table model nba_analytics_dev_analytics.dim_games .... [[31mERROR[0m in 1.13s]
+[0m11:46:22.906282 [debug] [Thread-3  ]: Finished running node model.nba_shot_analytics.dim_games
+[0m11:46:22.906600 [debug] [Thread-7  ]: Marking all children of 'model.nba_shot_analytics.dim_games' to be skipped because of status 'error'.  Reason: Database Error in model dim_games (models/marts/dim_games.sql)
+  Invalid date: '20241205'
+  compiled code at target/run/nba_shot_analytics/models/marts/dim_games.sql.
+[0m11:46:25.167650 [debug] [Thread-4  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '52fc47d1-4913-4336-a5d2-76808bd54eec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x146d1fee0>]}
+[0m11:46:25.168567 [info ] [Thread-4  ]: 3 of 5 OK created sql table model nba_analytics_dev_analytics.dim_players ...... [[32mCREATE TABLE (355.0 rows, 8.5 MiB processed)[0m in 3.39s]
+[0m11:46:25.169141 [debug] [Thread-4  ]: Finished running node model.nba_shot_analytics.dim_players
+[0m11:46:25.176190 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '52fc47d1-4913-4336-a5d2-76808bd54eec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x146b7f670>]}
+[0m11:46:25.176790 [info ] [Thread-2  ]: 4 of 5 OK created sql table model nba_analytics_dev_analytics.dim_teams ........ [[32mCREATE TABLE (30.0 rows, 6.8 MiB processed)[0m in 3.40s]
+[0m11:46:25.177378 [debug] [Thread-2  ]: Finished running node model.nba_shot_analytics.dim_teams
+[0m11:46:25.484895 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '52fc47d1-4913-4336-a5d2-76808bd54eec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e529d0>]}
+[0m11:46:25.487043 [info ] [Thread-1  ]: 5 of 5 OK created sql table model nba_analytics_dev_analytics.fact_shots ....... [[32mCREATE TABLE (115.6k rows, 20.7 MiB processed)[0m in 3.67s]
+[0m11:46:25.487741 [debug] [Thread-1  ]: Finished running node model.nba_shot_analytics.fact_shots
+[0m11:46:25.489176 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m11:46:25.489995 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:46:25.490360 [debug] [MainThread]: Connection 'model.nba_shot_analytics.fact_shots' was properly closed.
+[0m11:46:25.490688 [debug] [MainThread]: Connection 'model.nba_shot_analytics.dim_teams' was properly closed.
+[0m11:46:25.491011 [debug] [MainThread]: Connection 'model.nba_shot_analytics.dim_games' was properly closed.
+[0m11:46:25.491338 [debug] [MainThread]: Connection 'model.nba_shot_analytics.dim_players' was properly closed.
+[0m11:46:25.491815 [info ] [MainThread]: 
+[0m11:46:25.492217 [info ] [MainThread]: Finished running 4 table models, 1 view model in 0 hours 0 minutes and 5.86 seconds (5.86s).
+[0m11:46:25.493566 [debug] [MainThread]: Command end result
+[0m11:46:25.641792 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/krishpatel/Downloads/krish-portfolio/dbt_nba/target/manifest.json
+[0m11:46:25.642981 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/krishpatel/Downloads/krish-portfolio/dbt_nba/target/semantic_manifest.json
+[0m11:46:25.646965 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/krishpatel/Downloads/krish-portfolio/dbt_nba/target/run_results.json
+[0m11:46:25.647137 [info ] [MainThread]: 
+[0m11:46:25.647340 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m11:46:25.647503 [info ] [MainThread]: 
+[0m11:46:25.647708 [error] [MainThread]: [31mFailure in model dim_games (models/marts/dim_games.sql)[0m
+[0m11:46:25.647897 [error] [MainThread]:   Database Error in model dim_games (models/marts/dim_games.sql)
+  Invalid date: '20241205'
+  compiled code at target/run/nba_shot_analytics/models/marts/dim_games.sql
+[0m11:46:25.648045 [info ] [MainThread]: 
+[0m11:46:25.648220 [info ] [MainThread]:   compiled code at target/compiled/nba_shot_analytics/models/marts/dim_games.sql
+[0m11:46:25.648369 [info ] [MainThread]: 
+[0m11:46:25.648545 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=5
+[0m11:46:25.649966 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 7.9565654, "process_in_blocks": "0", "process_kernel_time": 0.390894, "process_mem_max_rss": "339296256", "process_out_blocks": "0", "process_user_time": 2.456346}
+[0m11:46:25.650162 [debug] [MainThread]: Command `dbt run` failed at 11:46:25.650124 after 7.96 seconds
+[0m11:46:25.650354 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10731aee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1075c9b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1463993d0>]}
+[0m11:46:25.650536 [debug] [MainThread]: Flushing usage events
+[0m11:46:25.774157 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:47:30.991470 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1038eaf40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104f29430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104f29250>]}
+
+
+============================== 11:47:30.994177 | d33662b7-a06b-497e-9dbd-046f8bf667e0 ==============================
+[0m11:47:30.994177 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m11:47:30.994495 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'indirect_selection': 'eager', 'empty': 'False', 'static_parser': 'True', 'write_json': 'True', 'printer_width': '80', 'use_experimental_parser': 'False', 'target_path': 'None', 'partial_parse': 'True', 'log_cache_events': 'False', 'log_format': 'default', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'no_print': 'None', 'cache_selected_only': 'False', 'invocation_command': 'dbt run --select dim_games', 'profiles_dir': '/Users/krishpatel/Downloads/krish-portfolio/dbt_nba', 'use_colors': 'True', 'warn_error': 'None', 'fail_fast': 'False', 'log_path': '/Users/krishpatel/Downloads/krish-portfolio/dbt_nba/logs'}
+[0m11:47:32.535134 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd33662b7-a06b-497e-9dbd-046f8bf667e0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1410f7ca0>]}
+[0m11:47:32.567361 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd33662b7-a06b-497e-9dbd-046f8bf667e0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1375ccac0>]}
+[0m11:47:32.567745 [info ] [MainThread]: Registered adapter: bigquery=1.10.2
+[0m11:47:32.718960 [debug] [MainThread]: checksum: e63134dccc1251cfb572caf0e4aa952f030c125ee3634f3bf2c0a2e1bb6ae349, vars: {}, profile: , target: , version: 1.11.0b3
+[0m11:47:32.821946 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m11:47:32.822447 [debug] [MainThread]: Partial parsing: updated file: nba_shot_analytics://models/marts/fact_shots.sql
+[0m11:47:32.822630 [debug] [MainThread]: Partial parsing: updated file: nba_shot_analytics://models/marts/dim_games.sql
+[0m11:47:33.000152 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `dbt_utils.accepted_range` defined on
+'fact_shots' in package 'nba_shot_analytics' (models/marts/marts.yml). Arguments
+to generic tests should be nested under the `arguments` property.
+[0m11:47:33.000459 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'd33662b7-a06b-497e-9dbd-046f8bf667e0', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x141c88c10>]}
+[0m11:47:33.067915 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd33662b7-a06b-497e-9dbd-046f8bf667e0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x141d68130>]}
+[0m11:47:33.226730 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/krishpatel/Downloads/krish-portfolio/dbt_nba/target/manifest.json
+[0m11:47:33.228604 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/krishpatel/Downloads/krish-portfolio/dbt_nba/target/semantic_manifest.json
+[0m11:47:33.241695 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd33662b7-a06b-497e-9dbd-046f8bf667e0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x141b7f070>]}
+[0m11:47:33.242084 [info ] [MainThread]: Found 6 models, 25 data tests, 1 source, 625 macros
+[0m11:47:33.242284 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd33662b7-a06b-497e-9dbd-046f8bf667e0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1028cc400>]}
+[0m11:47:33.243110 [info ] [MainThread]: 
+[0m11:47:33.243304 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m11:47:33.243448 [info ] [MainThread]: 
+[0m11:47:33.243733 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m11:47:33.244242 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_nbaanalyzer'
+[0m11:47:33.244463 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:47:34.200833 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_nbaanalyzer, now list_nbaanalyzer_nba_analytics_dev_analytics)
+[0m11:47:34.202152 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_nbaanalyzer_nba_analytics_dev_staging'
+[0m11:47:34.202652 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:47:34.203135 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:47:34.488642 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd33662b7-a06b-497e-9dbd-046f8bf667e0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x141c716d0>]}
+[0m11:47:34.489890 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:47:34.497724 [debug] [Thread-1  ]: Began running node model.nba_shot_analytics.dim_games
+[0m11:47:34.498535 [info ] [Thread-1  ]: 1 of 1 START sql table model nba_analytics_dev_analytics.dim_games ............. [RUN]
+[0m11:47:34.499134 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_nbaanalyzer_nba_analytics_dev_analytics, now model.nba_shot_analytics.dim_games)
+[0m11:47:34.499723 [debug] [Thread-1  ]: Began compiling node model.nba_shot_analytics.dim_games
+[0m11:47:34.521167 [debug] [Thread-1  ]: Writing injected SQL for node "model.nba_shot_analytics.dim_games"
+[0m11:47:34.522030 [debug] [Thread-1  ]: Began executing node model.nba_shot_analytics.dim_games
+[0m11:47:34.553104 [debug] [Thread-1  ]: Writing runtime sql for node "model.nba_shot_analytics.dim_games"
+[0m11:47:34.554120 [debug] [Thread-1  ]: On model.nba_shot_analytics.dim_games: /* {"app": "dbt", "dbt_version": "1.11.0b3", "profile_name": "nba_shot_analytics", "target_name": "dev", "node_id": "model.nba_shot_analytics.dim_games"} */
+
+  
+    
+
+    create or replace table `nbaanalyzer`.`nba_analytics_dev_analytics`.`dim_games`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      with game_shots as (
+
+    select
+        game_id,
+        game_date,
+        home_team_abbr,
+        away_team_abbr,
+        count(*)                                    as total_fga,
+        sum(shot_made)                              as total_fgm,
+        round(safe_divide(sum(shot_made), count(*)), 3) as game_fg_pct,
+        count(distinct player_id)                   as players_count,
+        max(period)                                 as final_period,
+        round(avg(shot_distance), 1)                as avg_shot_distance
+    from `nbaanalyzer`.`nba_analytics_dev_staging`.`stg_shots`
+    group by game_id, game_date, home_team_abbr, away_team_abbr
+
+)
+
+select
+    game_id,
+    parse_date('%Y%m%d', game_date) as game_date,
+    home_team_abbr,
+    away_team_abbr,
+    case when final_period > 4 then true else false end as went_to_overtime,
+    final_period,
+    total_fga,
+    total_fgm,
+    game_fg_pct,
+    players_count,
+    avg_shot_distance
+from game_shots
+    );
+  
+[0m11:47:34.554502 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m11:47:35.257550 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=nbaanalyzer&j=bq:US:3126aca7-3e97-4d4b-894f-22620251f7cc&page=queryresults
+[0m11:47:37.891937 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd33662b7-a06b-497e-9dbd-046f8bf667e0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1413acdc0>]}
+[0m11:47:37.893146 [info ] [Thread-1  ]: 1 of 1 OK created sql table model nba_analytics_dev_analytics.dim_games ........ [[32mCREATE TABLE (1.2k rows, 7.1 MiB processed)[0m in 3.39s]
+[0m11:47:37.893813 [debug] [Thread-1  ]: Finished running node model.nba_shot_analytics.dim_games
+[0m11:47:37.895454 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m11:47:37.896117 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:47:37.896367 [debug] [MainThread]: Connection 'model.nba_shot_analytics.dim_games' was properly closed.
+[0m11:47:37.896587 [debug] [MainThread]: Connection 'list_nbaanalyzer_nba_analytics_dev_staging' was properly closed.
+[0m11:47:37.896877 [info ] [MainThread]: 
+[0m11:47:37.897155 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 4.65 seconds (4.65s).
+[0m11:47:37.897755 [debug] [MainThread]: Command end result
+[0m11:47:37.930974 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/krishpatel/Downloads/krish-portfolio/dbt_nba/target/manifest.json
+[0m11:47:37.936720 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/krishpatel/Downloads/krish-portfolio/dbt_nba/target/semantic_manifest.json
+[0m11:47:37.941967 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/krishpatel/Downloads/krish-portfolio/dbt_nba/target/run_results.json
+[0m11:47:37.942187 [info ] [MainThread]: 
+[0m11:47:37.942444 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:47:37.942615 [info ] [MainThread]: 
+[0m11:47:37.942811 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m11:47:37.943283 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 5 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m11:47:37.945033 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 6.999947, "process_in_blocks": "0", "process_kernel_time": 0.408846, "process_mem_max_rss": "348372992", "process_out_blocks": "0", "process_user_time": 2.452072}
+[0m11:47:37.945296 [debug] [MainThread]: Command `dbt run` succeeded at 11:47:37.945248 after 7.00 seconds
+[0m11:47:37.945535 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1038eaf40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x141b7f0a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103ba3b20>]}
+[0m11:47:37.945740 [debug] [MainThread]: Flushing usage events
+[0m11:47:38.127878 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:47:39.488983 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10510ef10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b554c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b552e0>]}
+
+
+============================== 11:47:39.491099 | 4ffeb319-a1c4-47f4-9b87-1d13eaf07fba ==============================
+[0m11:47:39.491099 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m11:47:39.491388 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'warn_error': 'None', 'introspect': 'True', 'log_format': 'default', 'profiles_dir': '/Users/krishpatel/Downloads/krish-portfolio/dbt_nba', 'quiet': 'False', 'cache_selected_only': 'False', 'no_print': 'None', 'printer_width': '80', 'debug': 'False', 'log_path': '/Users/krishpatel/Downloads/krish-portfolio/dbt_nba/logs', 'empty': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run --select dim_games', 'use_experimental_parser': 'False', 'target_path': 'None', 'write_json': 'True', 'version_check': 'True'}
+[0m11:47:40.820042 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4ffeb319-a1c4-47f4-9b87-1d13eaf07fba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104041370>]}
+[0m11:47:40.850797 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4ffeb319-a1c4-47f4-9b87-1d13eaf07fba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1420dc460>]}
+[0m11:47:40.851142 [info ] [MainThread]: Registered adapter: bigquery=1.10.2
+[0m11:47:40.998019 [debug] [MainThread]: checksum: e63134dccc1251cfb572caf0e4aa952f030c125ee3634f3bf2c0a2e1bb6ae349, vars: {}, profile: , target: , version: 1.11.0b3
+[0m11:47:41.094121 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m11:47:41.094338 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m11:47:41.123677 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4ffeb319-a1c4-47f4-9b87-1d13eaf07fba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x14310f130>]}
+[0m11:47:41.184543 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/krishpatel/Downloads/krish-portfolio/dbt_nba/target/manifest.json
+[0m11:47:41.185740 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/krishpatel/Downloads/krish-portfolio/dbt_nba/target/semantic_manifest.json
+[0m11:47:41.197857 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4ffeb319-a1c4-47f4-9b87-1d13eaf07fba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1427e1580>]}
+[0m11:47:41.198188 [info ] [MainThread]: Found 6 models, 25 data tests, 1 source, 625 macros
+[0m11:47:41.198375 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4ffeb319-a1c4-47f4-9b87-1d13eaf07fba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1427e2880>]}
+[0m11:47:41.199143 [info ] [MainThread]: 
+[0m11:47:41.199344 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m11:47:41.199487 [info ] [MainThread]: 
+[0m11:47:41.199767 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m11:47:41.200223 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_nbaanalyzer'
+[0m11:47:41.200427 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:47:42.045054 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_nbaanalyzer, now list_nbaanalyzer_nba_analytics_dev_analytics)
+[0m11:47:42.046362 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:47:42.047120 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_nbaanalyzer_nba_analytics_dev_staging'
+[0m11:47:42.048729 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:47:42.348901 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4ffeb319-a1c4-47f4-9b87-1d13eaf07fba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1029521f0>]}
+[0m11:47:42.350486 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:47:42.356142 [debug] [Thread-1  ]: Began running node model.nba_shot_analytics.dim_games
+[0m11:47:42.357258 [info ] [Thread-1  ]: 1 of 1 START sql table model nba_analytics_dev_analytics.dim_games ............. [RUN]
+[0m11:47:42.358004 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_nbaanalyzer_nba_analytics_dev_analytics, now model.nba_shot_analytics.dim_games)
+[0m11:47:42.358461 [debug] [Thread-1  ]: Began compiling node model.nba_shot_analytics.dim_games
+[0m11:47:42.372953 [debug] [Thread-1  ]: Writing injected SQL for node "model.nba_shot_analytics.dim_games"
+[0m11:47:42.373697 [debug] [Thread-1  ]: Began executing node model.nba_shot_analytics.dim_games
+[0m11:47:42.385927 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m11:47:42.663667 [debug] [Thread-1  ]: Writing runtime sql for node "model.nba_shot_analytics.dim_games"
+[0m11:47:42.664372 [debug] [Thread-1  ]: On model.nba_shot_analytics.dim_games: /* {"app": "dbt", "dbt_version": "1.11.0b3", "profile_name": "nba_shot_analytics", "target_name": "dev", "node_id": "model.nba_shot_analytics.dim_games"} */
+
+  
+    
+
+    create or replace table `nbaanalyzer`.`nba_analytics_dev_analytics`.`dim_games`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      with game_shots as (
+
+    select
+        game_id,
+        game_date,
+        home_team_abbr,
+        away_team_abbr,
+        count(*)                                    as total_fga,
+        sum(shot_made)                              as total_fgm,
+        round(safe_divide(sum(shot_made), count(*)), 3) as game_fg_pct,
+        count(distinct player_id)                   as players_count,
+        max(period)                                 as final_period,
+        round(avg(shot_distance), 1)                as avg_shot_distance
+    from `nbaanalyzer`.`nba_analytics_dev_staging`.`stg_shots`
+    group by game_id, game_date, home_team_abbr, away_team_abbr
+
+)
+
+select
+    game_id,
+    parse_date('%Y%m%d', game_date) as game_date,
+    home_team_abbr,
+    away_team_abbr,
+    case when final_period > 4 then true else false end as went_to_overtime,
+    final_period,
+    total_fga,
+    total_fgm,
+    game_fg_pct,
+    players_count,
+    avg_shot_distance
+from game_shots
+    );
+  
+[0m11:47:43.206871 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=nbaanalyzer&j=bq:US:eaac52ce-d2b9-44c7-ba35-ae52264ab856&page=queryresults
+[0m11:47:45.157818 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4ffeb319-a1c4-47f4-9b87-1d13eaf07fba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106af6040>]}
+[0m11:47:45.158507 [info ] [Thread-1  ]: 1 of 1 OK created sql table model nba_analytics_dev_analytics.dim_games ........ [[32mCREATE TABLE (1.2k rows, 7.1 MiB processed)[0m in 2.80s]
+[0m11:47:45.158984 [debug] [Thread-1  ]: Finished running node model.nba_shot_analytics.dim_games
+[0m11:47:45.159802 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m11:47:45.160242 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:47:45.160469 [debug] [MainThread]: Connection 'model.nba_shot_analytics.dim_games' was properly closed.
+[0m11:47:45.160677 [debug] [MainThread]: Connection 'list_nbaanalyzer_nba_analytics_dev_staging' was properly closed.
+[0m11:47:45.160924 [info ] [MainThread]: 
+[0m11:47:45.161175 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 3.96 seconds (3.96s).
+[0m11:47:45.161641 [debug] [MainThread]: Command end result
+[0m11:47:45.189972 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/krishpatel/Downloads/krish-portfolio/dbt_nba/target/manifest.json
+[0m11:47:45.191784 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/krishpatel/Downloads/krish-portfolio/dbt_nba/target/semantic_manifest.json
+[0m11:47:45.195959 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/krishpatel/Downloads/krish-portfolio/dbt_nba/target/run_results.json
+[0m11:47:45.196151 [info ] [MainThread]: 
+[0m11:47:45.196398 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:47:45.196571 [info ] [MainThread]: 
+[0m11:47:45.196765 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m11:47:45.199060 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 5.7457438, "process_in_blocks": "0", "process_kernel_time": 0.286839, "process_mem_max_rss": "333922304", "process_out_blocks": "0", "process_user_time": 2.126038}
+[0m11:47:45.199446 [debug] [MainThread]: Command `dbt run` succeeded at 11:47:45.199387 after 5.75 seconds
+[0m11:47:45.199692 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10510ef10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x14205f070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1053d11f0>]}
+[0m11:47:45.199940 [debug] [MainThread]: Flushing usage events
+[0m11:47:45.286895 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:28:12.729217 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104f76f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1065b34c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1065b32e0>]}
+
+
+============================== 12:28:12.732335 | 38439bd0-6e61-4cb2-8d2a-883fdb5a7605 ==============================
+[0m12:28:12.732335 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m12:28:12.732687 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run', 'static_parser': 'True', 'write_json': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'version_check': 'True', 'printer_width': '80', 'cache_selected_only': 'False', 'no_print': 'None', 'partial_parse': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True', 'empty': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'log_path': '/Users/krishpatel/Downloads/krish-portfolio/dbt_nba/logs', 'quiet': 'False', 'use_experimental_parser': 'False', 'profiles_dir': '/Users/krishpatel/Downloads/krish-portfolio/dbt_nba', 'debug': 'False', 'introspect': 'True', 'warn_error': 'None', 'log_format': 'default'}
+[0m12:28:14.321903 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '38439bd0-6e61-4cb2-8d2a-883fdb5a7605', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103ea9370>]}
+[0m12:28:14.352790 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '38439bd0-6e61-4cb2-8d2a-883fdb5a7605', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1065694c0>]}
+[0m12:28:14.353154 [info ] [MainThread]: Registered adapter: bigquery=1.10.2
+[0m12:28:14.501218 [debug] [MainThread]: checksum: e63134dccc1251cfb572caf0e4aa952f030c125ee3634f3bf2c0a2e1bb6ae349, vars: {}, profile: , target: , version: 1.11.0b3
+[0m12:28:14.605044 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m12:28:14.605287 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m12:28:14.635842 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '38439bd0-6e61-4cb2-8d2a-883fdb5a7605', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12fe93ee0>]}
+[0m12:28:14.699438 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/krishpatel/Downloads/krish-portfolio/dbt_nba/target/manifest.json
+[0m12:28:14.701634 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/krishpatel/Downloads/krish-portfolio/dbt_nba/target/semantic_manifest.json
+[0m12:28:14.714690 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '38439bd0-6e61-4cb2-8d2a-883fdb5a7605', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12fe4ca00>]}
+[0m12:28:14.714979 [info ] [MainThread]: Found 6 models, 25 data tests, 1 source, 625 macros
+[0m12:28:14.715164 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '38439bd0-6e61-4cb2-8d2a-883fdb5a7605', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12fe7e0a0>]}
+[0m12:28:14.716116 [info ] [MainThread]: 
+[0m12:28:14.716304 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m12:28:14.716449 [info ] [MainThread]: 
+[0m12:28:14.716715 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m12:28:14.719203 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_nbaanalyzer'
+[0m12:28:14.719500 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_nbaanalyzer'
+[0m12:28:14.719704 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:28:14.719881 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:28:15.636814 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_nbaanalyzer, now list_nbaanalyzer_nba_analytics_dev_staging)
+[0m12:28:15.638082 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_nbaanalyzer, now list_nbaanalyzer_nba_analytics_dev_analytics)
+[0m12:28:15.638643 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m12:28:15.639228 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m12:28:15.976793 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '38439bd0-6e61-4cb2-8d2a-883fdb5a7605', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12f7c1e20>]}
+[0m12:28:15.978420 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:28:15.983606 [debug] [Thread-1  ]: Began running node model.nba_shot_analytics.stg_shots
+[0m12:28:15.984462 [info ] [Thread-1  ]: 1 of 5 START sql view model nba_analytics_dev_staging.stg_shots ................ [RUN]
+[0m12:28:15.985130 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_nbaanalyzer_nba_analytics_dev_staging, now model.nba_shot_analytics.stg_shots)
+[0m12:28:15.985579 [debug] [Thread-1  ]: Began compiling node model.nba_shot_analytics.stg_shots
+[0m12:28:16.010680 [debug] [Thread-1  ]: Writing injected SQL for node "model.nba_shot_analytics.stg_shots"
+[0m12:28:16.011515 [debug] [Thread-1  ]: Began executing node model.nba_shot_analytics.stg_shots
+[0m12:28:16.038719 [debug] [Thread-1  ]: Writing runtime sql for node "model.nba_shot_analytics.stg_shots"
+[0m12:28:16.039736 [debug] [Thread-1  ]: On model.nba_shot_analytics.stg_shots: /* {"app": "dbt", "dbt_version": "1.11.0b3", "profile_name": "nba_shot_analytics", "target_name": "dev", "node_id": "model.nba_shot_analytics.stg_shots"} */
+
+
+  create or replace view `nbaanalyzer`.`nba_analytics_dev_staging`.`stg_shots`
+  OPTIONS()
+  as with source as (
+
+    select * from `nbaanalyzer`.`nba_raw`.`shots_with_rest`
+
+),
+
+renamed as (
+
+    select
+        -- identifiers
+        to_hex(md5(cast(coalesce(cast(GAME_ID as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(GAME_EVENT_ID as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(PLAYER_ID as string), '_dbt_utils_surrogate_key_null_') as string)))
+            as shot_id,
+        cast(GAME_ID as string)     as game_id,
+        cast(PLAYER_ID as int64)    as player_id,
+        PLAYER_NAME                 as player_name,
+        cast(TEAM_ID as int64)      as team_id,
+        TEAM_NAME                   as team_name,
+
+        -- game context
+        GAME_DATE                   as game_date,
+        HTM                         as home_team_abbr,
+        VTM                         as away_team_abbr,
+
+        -- shot location
+        cast(LOC_X as float64)      as loc_x,
+        cast(LOC_Y as float64)      as loc_y,
+        cast(SHOT_DISTANCE as int64) as shot_distance,
+
+        -- shot classification
+        SHOT_TYPE                   as shot_type,
+        SHOT_ZONE_BASIC             as shot_zone_basic,
+        SHOT_ZONE_AREA              as shot_zone_area,
+        SHOT_ZONE_RANGE             as shot_zone_range,
+        ACTION_TYPE                 as action_type,
+        EVENT_TYPE                  as event_type,
+
+        -- timing
+        cast(PERIOD as int64)       as period,
+        cast(MINUTES_REMAINING as int64)  as minutes_remaining,
+        cast(SECONDS_REMAINING as int64)  as seconds_remaining,
+
+        -- outcome
+        cast(SHOT_MADE_FLAG as int64)      as shot_made,
+        cast(SHOT_ATTEMPTED_FLAG as int64) as shot_attempted,
+
+        -- rest / fatigue
+        cast(REST_DAYS as float64)  as rest_days
+
+    from source
+
+)
+
+select * from renamed;
+
+
+[0m12:28:16.040122 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:28:16.750973 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=nbaanalyzer&j=bq:US:96a31262-3eae-458f-a868-a4ad398754c5&page=queryresults
+[0m12:28:17.220099 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '38439bd0-6e61-4cb2-8d2a-883fdb5a7605', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ad10d0>]}
+[0m12:28:17.220630 [info ] [Thread-1  ]: 1 of 5 OK created sql view model nba_analytics_dev_staging.stg_shots ........... [[32mCREATE VIEW (0 processed)[0m in 1.23s]
+[0m12:28:17.221004 [debug] [Thread-1  ]: Finished running node model.nba_shot_analytics.stg_shots
+[0m12:28:17.221509 [debug] [Thread-3  ]: Began running node model.nba_shot_analytics.dim_games
+[0m12:28:17.221775 [debug] [Thread-4  ]: Began running node model.nba_shot_analytics.dim_players
+[0m12:28:17.222065 [info ] [Thread-3  ]: 2 of 5 START sql table model nba_analytics_dev_analytics.dim_games ............. [RUN]
+[0m12:28:17.222337 [debug] [Thread-2  ]: Began running node model.nba_shot_analytics.dim_teams
+[0m12:28:17.222589 [debug] [Thread-1  ]: Began running node model.nba_shot_analytics.int_shots_enriched
+[0m12:28:17.222856 [info ] [Thread-4  ]: 3 of 5 START sql table model nba_analytics_dev_analytics.dim_players ........... [RUN]
+[0m12:28:17.223190 [debug] [Thread-3  ]: Acquiring new bigquery connection 'model.nba_shot_analytics.dim_games'
+[0m12:28:17.223488 [info ] [Thread-2  ]: 4 of 5 START sql table model nba_analytics_dev_analytics.dim_teams ............. [RUN]
+[0m12:28:17.223770 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.nba_shot_analytics.stg_shots, now model.nba_shot_analytics.int_shots_enriched)
+[0m12:28:17.224065 [debug] [Thread-4  ]: Acquiring new bigquery connection 'model.nba_shot_analytics.dim_players'
+[0m12:28:17.224282 [debug] [Thread-3  ]: Began compiling node model.nba_shot_analytics.dim_games
+[0m12:28:17.224537 [debug] [Thread-2  ]: Re-using an available connection from the pool (formerly list_nbaanalyzer_nba_analytics_dev_analytics, now model.nba_shot_analytics.dim_teams)
+[0m12:28:17.224780 [debug] [Thread-1  ]: Began compiling node model.nba_shot_analytics.int_shots_enriched
+[0m12:28:17.224991 [debug] [Thread-4  ]: Began compiling node model.nba_shot_analytics.dim_players
+[0m12:28:17.227563 [debug] [Thread-3  ]: Writing injected SQL for node "model.nba_shot_analytics.dim_games"
+[0m12:28:17.227801 [debug] [Thread-2  ]: Began compiling node model.nba_shot_analytics.dim_teams
+[0m12:28:17.229945 [debug] [Thread-1  ]: Writing injected SQL for node "model.nba_shot_analytics.int_shots_enriched"
+[0m12:28:17.232539 [debug] [Thread-4  ]: Writing injected SQL for node "model.nba_shot_analytics.dim_players"
+[0m12:28:17.234856 [debug] [Thread-2  ]: Writing injected SQL for node "model.nba_shot_analytics.dim_teams"
+[0m12:28:17.235699 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:28:17.235918 [debug] [Thread-4  ]: Began executing node model.nba_shot_analytics.dim_players
+[0m12:28:17.236125 [debug] [Thread-2  ]: Began executing node model.nba_shot_analytics.dim_teams
+[0m12:28:17.236626 [debug] [Thread-1  ]: Finished running node model.nba_shot_analytics.int_shots_enriched
+[0m12:28:17.236808 [debug] [Thread-3  ]: Began executing node model.nba_shot_analytics.dim_games
+[0m12:28:17.243592 [debug] [Thread-4  ]: Opening a new connection, currently in state init
+[0m12:28:17.245573 [debug] [Thread-2  ]: Opening a new connection, currently in state closed
+[0m12:28:17.247134 [debug] [Thread-3  ]: Opening a new connection, currently in state init
+[0m12:28:17.247334 [debug] [Thread-1  ]: Began running node model.nba_shot_analytics.fact_shots
+[0m12:28:17.249156 [info ] [Thread-1  ]: 5 of 5 START sql table model nba_analytics_dev_analytics.fact_shots ............ [RUN]
+[0m12:28:17.249466 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.nba_shot_analytics.int_shots_enriched, now model.nba_shot_analytics.fact_shots)
+[0m12:28:17.249703 [debug] [Thread-1  ]: Began compiling node model.nba_shot_analytics.fact_shots
+[0m12:28:17.268096 [debug] [Thread-1  ]: Writing injected SQL for node "model.nba_shot_analytics.fact_shots"
+[0m12:28:17.269873 [debug] [Thread-1  ]: Began executing node model.nba_shot_analytics.fact_shots
+[0m12:28:17.271993 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:28:17.515968 [debug] [Thread-1  ]: Writing runtime sql for node "model.nba_shot_analytics.fact_shots"
+[0m12:28:17.517196 [debug] [Thread-2  ]: Writing runtime sql for node "model.nba_shot_analytics.dim_teams"
+[0m12:28:17.518004 [debug] [Thread-3  ]: Writing runtime sql for node "model.nba_shot_analytics.dim_games"
+[0m12:28:17.518877 [debug] [Thread-1  ]: On model.nba_shot_analytics.fact_shots: /* {"app": "dbt", "dbt_version": "1.11.0b3", "profile_name": "nba_shot_analytics", "target_name": "dev", "node_id": "model.nba_shot_analytics.fact_shots"} */
+
+  
+    
+
+    create or replace table `nbaanalyzer`.`nba_analytics_dev_analytics`.`fact_shots`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      /*
+    fact_shots — one row per field goal attempt
+    Includes shot context, fatigue metrics, and computed shot_quality_score.
+
+    Score differential is estimated per-game using cumulative made shots
+    as a proxy (true score diff requires play-by-play data).
+*/
+
+with  __dbt__cte__int_shots_enriched as (
+/*
+    Enriches staged shots with:
+    - total seconds remaining in regulation
+    - is_back_to_back flag
+    - shot zone category for quality scoring
+    - score differential (estimated from period + time context)
+*/
+
+with shots as (
+
+    select * from `nbaanalyzer`.`nba_analytics_dev_staging`.`stg_shots`
+
+),
+
+game_context as (
+
+    -- derive per-player back-to-back from rest_days
+    select
+        *,
+
+        -- total seconds left in regulation (periods 1-4 are 12 min each)
+        case
+            when period <= 4
+                then (4 - period) * 720 + minutes_remaining * 60 + seconds_remaining
+            else minutes_remaining * 60 + seconds_remaining  -- OT: just remaining time
+        end as total_seconds_remaining,
+
+        -- back-to-back: played yesterday (rest_days = 1)
+        case when rest_days = 1 then true else false end as is_back_to_back,
+
+        -- normalize zone names to scoring categories
+        case
+            when shot_zone_basic in ('Restricted Area', 'In The Paint (Non-RA)')
+                then 'paint'
+            when shot_zone_basic = 'Mid-Range'
+                then 'midrange'
+            when shot_zone_basic in ('Left Corner 3', 'Right Corner 3')
+                then 'corner_3'
+            when shot_zone_basic = 'Above the Break 3'
+                then 'above_break_3'
+            when shot_zone_basic = 'Backcourt'
+                then 'backcourt'
+            else 'other'
+        end as shot_zone_category
+
+    from shots
+
+)
+
+select * from game_context
+), enriched as (
+
+    select * from __dbt__cte__int_shots_enriched
+
+),
+
+-- Estimate score differential using cumulative points within each game
+-- This is an approximation; true differential needs play-by-play data
+game_scoring as (
+
+    select
+        *,
+
+        -- cumulative points scored by player's team in this game up to this shot
+        sum(case when shot_made = 1 then
+            case when shot_type = '3PT Field Goal' then 3 else 2 end
+            else 0 end)
+            over (
+                partition by game_id, team_id
+                order by period, minutes_remaining desc, seconds_remaining desc
+                rows between unbounded preceding and 1 preceding
+            ) as team_pts_before,
+
+        -- cumulative points by opposing team
+        sum(case when shot_made = 1 then
+            case when shot_type = '3PT Field Goal' then 3 else 2 end
+            else 0 end)
+            over (
+                partition by game_id
+                order by period, minutes_remaining desc, seconds_remaining desc
+                rows between unbounded preceding and 1 preceding
+            ) as game_pts_before
+
+    from enriched
+
+),
+
+with_differential as (
+
+    select
+        *,
+        -- score_differential = my team's points - opponent's points (approx)
+        coalesce(team_pts_before, 0)
+            - coalesce(game_pts_before - team_pts_before, 0)
+            as score_differential
+    from game_scoring
+
+)
+
+select
+    -- keys
+    shot_id,
+    game_id,
+    player_id,
+    team_id,
+
+    -- shot details
+    shot_type,
+    action_type,
+    event_type,
+    shot_made,
+    loc_x,
+    loc_y,
+
+    -- zone & distance
+    shot_distance,
+    shot_zone_basic,
+    shot_zone_area,
+    shot_zone_range,
+    shot_zone_category,
+
+    -- timing
+    period,
+    minutes_remaining,
+    seconds_remaining,
+    total_seconds_remaining,
+
+    -- game state
+    score_differential,
+
+    -- fatigue
+    rest_days,
+    is_back_to_back,
+
+    -- shot quality score
+    
+
+    round(cast(
+        -- zone base value
+        case shot_zone_category
+            when 'paint'         then 0.65
+            when 'corner_3'      then 0.58
+            when 'above_break_3' then 0.52
+            when 'midrange'      then 0.40
+            when 'backcourt'     then 0.05
+            else 0.35
+        end
+
+        -- distance adjustment: -0.005 per foot beyond zone midpoint
+        - greatest(0.0, (shot_distance - case shot_zone_category
+            when 'paint'         then 5
+            when 'midrange'      then 15
+            when 'corner_3'      then 23
+            when 'above_break_3' then 25
+            else 20
+        end) * 0.005)
+
+        -- fatigue adjustment
+        - case
+            when is_back_to_back then 0.03
+            when coalesce(rest_days, 2) = 0 then 0.04
+            else 0.0
+        end
+
+        -- clutch bonus: final 2 min of 4Q/OT, game within 5 pts
+        + case
+            when period >= 4
+                 and total_seconds_remaining <= 120
+                 and abs(coalesce(score_differential, 0)) <= 5
+            then 0.05
+            else 0.0
+        end
+
+    as float64), 4)
+
+ as shot_quality_score
+
+from with_differential
+    );
+  
+[0m12:28:17.519498 [debug] [Thread-3  ]: On model.nba_shot_analytics.dim_games: /* {"app": "dbt", "dbt_version": "1.11.0b3", "profile_name": "nba_shot_analytics", "target_name": "dev", "node_id": "model.nba_shot_analytics.dim_games"} */
+
+  
+    
+
+    create or replace table `nbaanalyzer`.`nba_analytics_dev_analytics`.`dim_games`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      with game_shots as (
+
+    select
+        game_id,
+        game_date,
+        home_team_abbr,
+        away_team_abbr,
+        count(*)                                    as total_fga,
+        sum(shot_made)                              as total_fgm,
+        round(safe_divide(sum(shot_made), count(*)), 3) as game_fg_pct,
+        count(distinct player_id)                   as players_count,
+        max(period)                                 as final_period,
+        round(avg(shot_distance), 1)                as avg_shot_distance
+    from `nbaanalyzer`.`nba_analytics_dev_staging`.`stg_shots`
+    group by game_id, game_date, home_team_abbr, away_team_abbr
+
+)
+
+select
+    game_id,
+    parse_date('%Y%m%d', game_date) as game_date,
+    home_team_abbr,
+    away_team_abbr,
+    case when final_period > 4 then true else false end as went_to_overtime,
+    final_period,
+    total_fga,
+    total_fgm,
+    game_fg_pct,
+    players_count,
+    avg_shot_distance
+from game_shots
+    );
+  
+[0m12:28:17.520640 [debug] [Thread-2  ]: On model.nba_shot_analytics.dim_teams: /* {"app": "dbt", "dbt_version": "1.11.0b3", "profile_name": "nba_shot_analytics", "target_name": "dev", "node_id": "model.nba_shot_analytics.dim_teams"} */
+
+  
+    
+
+    create or replace table `nbaanalyzer`.`nba_analytics_dev_analytics`.`dim_teams`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      with team_source as (
+
+    select distinct
+        team_id,
+        team_name
+    from `nbaanalyzer`.`nba_analytics_dev_staging`.`stg_shots`
+    where team_id is not null
+
+),
+
+team_stats as (
+
+    select
+        team_id,
+        count(*)                                    as team_fga,
+        sum(shot_made)                              as team_fgm,
+        round(safe_divide(sum(shot_made), count(*)), 3) as team_fg_pct,
+        count(distinct player_id)                   as roster_size,
+        count(distinct game_id)                     as games_played,
+        round(avg(shot_distance), 1)                as avg_shot_distance
+    from `nbaanalyzer`.`nba_analytics_dev_staging`.`stg_shots`
+    group by team_id
+
+)
+
+select
+    t.team_id,
+    t.team_name,
+    s.team_fga,
+    s.team_fgm,
+    s.team_fg_pct,
+    s.roster_size,
+    s.games_played,
+    s.avg_shot_distance
+from team_source t
+inner join team_stats s using (team_id)
+    );
+  
+[0m12:28:17.550827 [debug] [Thread-4  ]: Writing runtime sql for node "model.nba_shot_analytics.dim_players"
+[0m12:28:17.551603 [debug] [Thread-4  ]: On model.nba_shot_analytics.dim_players: /* {"app": "dbt", "dbt_version": "1.11.0b3", "profile_name": "nba_shot_analytics", "target_name": "dev", "node_id": "model.nba_shot_analytics.dim_players"} */
+
+  
+    
+
+    create or replace table `nbaanalyzer`.`nba_analytics_dev_analytics`.`dim_players`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      with player_source as (
+
+    select distinct
+        player_id,
+        player_name,
+        team_id,
+        team_name
+    from `nbaanalyzer`.`nba_analytics_dev_staging`.`stg_shots`
+
+),
+
+player_stats as (
+
+    select
+        player_id,
+        count(*)                                    as total_fga,
+        sum(shot_made)                              as total_fgm,
+        round(safe_divide(sum(shot_made), count(*)), 3) as fg_pct,
+        count(distinct game_id)                     as games_played,
+        round(avg(shot_distance), 1)                as avg_shot_distance
+    from `nbaanalyzer`.`nba_analytics_dev_staging`.`stg_shots`
+    group by player_id
+
+)
+
+select
+    p.player_id,
+    p.player_name,
+    p.team_id,
+    p.team_name,
+    s.total_fga,
+    s.total_fgm,
+    s.fg_pct,
+    s.games_played,
+    s.avg_shot_distance
+from player_source p
+inner join player_stats s using (player_id)
+    );
+  
+[0m12:28:18.082663 [debug] [Thread-3  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=nbaanalyzer&j=bq:US:f76c0fff-66aa-4c80-9132-d80a73b41f5b&page=queryresults
+[0m12:28:18.084460 [debug] [Thread-2  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=nbaanalyzer&j=bq:US:eaa10f4f-83e9-4930-b454-5cf328bdb8b5&page=queryresults
+[0m12:28:18.085299 [debug] [Thread-4  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=nbaanalyzer&j=bq:US:7c87833f-688b-4052-ac2d-a2bf4d5fce8a&page=queryresults
+[0m12:28:18.146980 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=nbaanalyzer&j=bq:US:93fbf6fa-4ca9-4149-98c2-1d69d279e6b1&page=queryresults
+[0m12:28:20.222649 [debug] [Thread-4  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '38439bd0-6e61-4cb2-8d2a-883fdb5a7605', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1497dfc40>]}
+[0m12:28:20.224851 [info ] [Thread-4  ]: 3 of 5 OK created sql table model nba_analytics_dev_analytics.dim_players ...... [[32mCREATE TABLE (650.0 rows, 16.2 MiB processed)[0m in 3.00s]
+[0m12:28:20.226036 [debug] [Thread-4  ]: Finished running node model.nba_shot_analytics.dim_players
+[0m12:28:20.294543 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '38439bd0-6e61-4cb2-8d2a-883fdb5a7605', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x14980b5b0>]}
+[0m12:28:20.295140 [info ] [Thread-2  ]: 4 of 5 OK created sql table model nba_analytics_dev_analytics.dim_teams ........ [[32mCREATE TABLE (30.0 rows, 12.9 MiB processed)[0m in 3.07s]
+[0m12:28:20.295624 [debug] [Thread-2  ]: Finished running node model.nba_shot_analytics.dim_teams
+[0m12:28:21.565373 [debug] [Thread-3  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '38439bd0-6e61-4cb2-8d2a-883fdb5a7605', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ae3e20>]}
+[0m12:28:21.567381 [info ] [Thread-3  ]: 2 of 5 OK created sql table model nba_analytics_dev_analytics.dim_games ........ [[32mCREATE TABLE (1.2k rows, 13.4 MiB processed)[0m in 4.34s]
+[0m12:28:21.568371 [debug] [Thread-3  ]: Finished running node model.nba_shot_analytics.dim_games
+[0m12:28:23.529363 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '38439bd0-6e61-4cb2-8d2a-883fdb5a7605', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x14985be20>]}
+[0m12:28:23.530846 [info ] [Thread-1  ]: 5 of 5 OK created sql table model nba_analytics_dev_analytics.fact_shots ....... [[32mCREATE TABLE (219.5k rows, 39.7 MiB processed)[0m in 6.28s]
+[0m12:28:23.531767 [debug] [Thread-1  ]: Finished running node model.nba_shot_analytics.fact_shots
+[0m12:28:23.534739 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m12:28:23.536290 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:28:23.536806 [debug] [MainThread]: Connection 'model.nba_shot_analytics.fact_shots' was properly closed.
+[0m12:28:23.537210 [debug] [MainThread]: Connection 'model.nba_shot_analytics.dim_teams' was properly closed.
+[0m12:28:23.537750 [debug] [MainThread]: Connection 'model.nba_shot_analytics.dim_games' was properly closed.
+[0m12:28:23.538379 [debug] [MainThread]: Connection 'model.nba_shot_analytics.dim_players' was properly closed.
+[0m12:28:23.539280 [info ] [MainThread]: 
+[0m12:28:23.539773 [info ] [MainThread]: Finished running 4 table models, 1 view model in 0 hours 0 minutes and 8.82 seconds (8.82s).
+[0m12:28:23.541535 [debug] [MainThread]: Command end result
+[0m12:28:23.698686 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/krishpatel/Downloads/krish-portfolio/dbt_nba/target/manifest.json
+[0m12:28:23.699804 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/krishpatel/Downloads/krish-portfolio/dbt_nba/target/semantic_manifest.json
+[0m12:28:23.703300 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/krishpatel/Downloads/krish-portfolio/dbt_nba/target/run_results.json
+[0m12:28:23.703466 [info ] [MainThread]: 
+[0m12:28:23.703673 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:28:23.703832 [info ] [MainThread]: 
+[0m12:28:23.704005 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=5
+[0m12:28:23.705652 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 11.024538, "process_in_blocks": "0", "process_kernel_time": 0.485214, "process_mem_max_rss": "334512128", "process_out_blocks": "0", "process_user_time": 2.545165}
+[0m12:28:23.705853 [debug] [MainThread]: Command `dbt run` succeeded at 12:28:23.705813 after 11.02 seconds
+[0m12:28:23.706048 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104f76f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104aa61c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12f9c8bb0>]}
+[0m12:28:23.706237 [debug] [MainThread]: Flushing usage events
+[0m12:28:23.938701 [debug] [MainThread]: An error was encountered while trying to flush usage events

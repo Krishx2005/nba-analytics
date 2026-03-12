@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: stg_shots
+    description: Cleaned and renamed shot chart data with rest days
+    columns:
+      - name: shot_id
+        description: Surrogate key (game_id + event_id + player_id)
+        tests:
+          - unique
+          - not_null
+      - name: player_id
+        tests: [not_null]
+      - name: game_id
+        tests: [not_null]
+      - name: shot_made
+        tests:
+          - accepted_values:
+              values: [0, 1]
